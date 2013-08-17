@@ -23,7 +23,7 @@ Ext.define('DeRoseFest.view.Location', {
 
 	initialize: function() {
 		var position = new Microsoft.Maps.Location(DeRoseFest.app.mapCenter[0], DeRoseFest.app.mapCenter[1]),
-			map;
+  			map;
 
 		this.callParent();
 
@@ -34,7 +34,7 @@ Ext.define('DeRoseFest.view.Location', {
             });
             map.entities.clear();
             var pushpin= new Microsoft.Maps.Pushpin(map.getCenter(), null);
-            pushpinClick= Microsoft.Maps.Events.addHandler(pushpin, 'click', function() {
+                pushpinClick= Microsoft.Maps.Events.addHandler(pushpin, 'click', function() {
                 map.entities.push(infobox);
                 infobox.setOptions({visible:true});
             });
@@ -45,8 +45,9 @@ Ext.define('DeRoseFest.view.Location', {
 			xtype: 'map',
 			mapOptions: {
 				center: position,
-		        mapTypeId: Microsoft.Maps.MapTypeId.ROADMAP,
-                callback: mapCallback
+				zoom: 17,
+        mapTypeId: Microsoft.Maps.MapTypeId.ROADMAP,
+        callback: mapCallback
 			}
 	    });
 	}
