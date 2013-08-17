@@ -15,7 +15,7 @@ Ext.application({
 
     twitterSearch: '#DeRoseFestivalBA',
 
-    mapCenter: [37.788539, -122.401643],
+    mapCenter: [-34.5884236,-58.397597],
     mapText: 'The Palace Hotel<br /><small>2 New Montgomery Street<br />San Francisco, CA 94105<br />(415) 512-1111</small>',
 
     aboutPages: [
