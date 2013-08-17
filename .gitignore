@@ -1,2 +1,4 @@
 build/*
 derose_fest.keystore
+.ruby-gemset
+resources/sass/.sass-cache
