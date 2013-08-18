@@ -123,10 +123,10 @@ Ext.application({
         // Splash Screen
         var splash = Ext.create('Ext.Panel', {
             fullscreen: true,
-            html: 'This is my Splash'
+            id: 'splashScreen'
         });
         splash.show();
-        Ext.defer(function() { splash.destroy(); }, 5000);
+        Ext.defer(function() { splash.destroy(); }, 2500);
 
         // setInterval(function(){
         //     Ext.DomQuery.select('link')[0].href = "resources/css/oreilly.css?" + Math.ceil(Math.random() * 100000000)
