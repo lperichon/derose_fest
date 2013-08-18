@@ -120,6 +120,14 @@ Ext.application({
             Ext.Viewport.setMasked(false);
         });
 
+        // Splash Screen
+        var splash = Ext.create('Ext.Panel', {
+            fullscreen: true,
+            html: 'This is my Splash'
+        });
+        splash.show();
+        Ext.defer(function() { splash.destroy(); }, 5000);
+
         // setInterval(function(){
         //     Ext.DomQuery.select('link')[0].href = "resources/css/oreilly.css?" + Math.ceil(Math.random() * 100000000)
         // }, 1000);
