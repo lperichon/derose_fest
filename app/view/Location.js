@@ -24,7 +24,7 @@ Ext.define('DeRoseFest.view.Location', {
                     position  : new google.maps.LatLng(DeRoseFest.app.mapCenter[0], DeRoseFest.app.mapCenter[1]),
                     title     : 'DeRose Festival',
                     animation : google.maps.Animation.DROP,
-                    draggable : false
+                    icon : 'resources/images/hotel_0star.png'
                 });
             }
         }
