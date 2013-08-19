@@ -4,6 +4,7 @@ Ext.define('DeRoseFest.model.Speaker', {
 	config: {
 		fields: [
 			'id',
+            'order',
 			'first_name',
 			'last_name',
 			'sessionIds',

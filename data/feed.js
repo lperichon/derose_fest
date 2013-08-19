@@ -6,6 +6,7 @@ var domingo = "Domingo, 09/23/2013";
 
 var yael = {
     id: 13,
+    order: '10',
     icon: null,
     first_name: 'Yael',
     last_name: 'Barcesat',
@@ -20,6 +21,7 @@ var yael = {
 
 var edgardo = {
     id: 11,
+    order: '02',
     icon: null,
     first_name: 'Edgardo',
     last_name: 'Caramella',
@@ -34,6 +36,7 @@ var edgardo = {
 
 var fernanda = {
     id: 10,
+    order: '05',
     icon: null,
     first_name: 'Fernanda',
     last_name: 'Neis',
@@ -48,6 +51,7 @@ var fernanda = {
 
 var charles = {
     id: 12,
+    order: '04',
     icon: null,
     first_name: 'Charles',
     last_name: 'Maciel',
@@ -62,6 +66,7 @@ var charles = {
 
 var nina = {
     id: 9,
+    order: '05',
     icon: null,
     first_name: 'Nina',
     last_name: 'de Holanda',
@@ -76,6 +81,7 @@ var nina = {
 
 var mariahelena = {
     id: 8,
+    order: '03',
     icon: null,
     first_name: 'Maria Helena',
     last_name: 'Aguiar',
@@ -90,6 +96,7 @@ var mariahelena = {
 
 var vanessa = {
     id: 7,
+    order: '08',
     icon: null,
     first_name: 'Vanessa',
     last_name: 'de Holanda',
@@ -104,6 +111,7 @@ var vanessa = {
 
 var naiana = {
     id: 6,
+    order: '07',
     icon: null,
     first_name: 'Naiana',
     last_name: 'Ramos Alberti',
@@ -118,6 +126,7 @@ var naiana = {
 
 var melina = {
     id: 5,
+    order: '11',
     icon: null,
     first_name: 'Melina',
     last_name: 'Flores',
@@ -132,6 +141,7 @@ var melina = {
 
 var rogerio = {
     id: 4,
+    order: '09',
     icon: null,
     first_name: 'Rogério',
     last_name: 'Brant',
@@ -146,6 +156,7 @@ var rogerio = {
 
 var joris = {
     id: 3,
+    order: '06',
     icon: null,
     first_name: "Joris",
     photo: "resources/images/joris.jpg",
@@ -160,6 +171,7 @@ var joris = {
 
 var derose = {
     id: 2,
+    order: '01',
     icon: null,
     first_name: "",
     last_name: "DeRose",
