@@ -9,11 +9,11 @@ Ext.define('DeRoseFest.view.Location', {
 			{
 				docked: 'top',
 				xtype: 'toolbar',
-				title: 'Location'
+				title: 'Mapa'
 			}
 		], 
 	    mapOptions: {
-		    center: new google.maps.LatLng(DeRoseFest.app.mapCenter[0], DeRoseFest.app.mapCenter[1]),
+		    center: new google.maps.LatLng(-34.58798,-58.391127),
 		    mapTypeId: google.maps.MapTypeId.ROADMAP,
 		    zoom: 17
 	    },
