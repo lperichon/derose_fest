@@ -20,25 +20,19 @@ Ext.application({
 
     aboutPages: [
         {
-            title: 'Overview',
+            title: 'Sobre el Método DeRose',
             xtype: 'htmlPage',
-            url: 'data/about.html'
+            url: 'data/about_mdr.html'
         },
         {
-            title: 'Sponsors',
+            title: "Sobre el DeRose Festival",
             xtype: 'htmlPage',
-            url: 'data/sponsors.html'
+            url: 'data/about_fest.html'
         },
         {
             title: 'Credits',
             xtype: 'htmlPage',
             url: 'data/credits.html'
-        },
-        {
-            title: 'Videos',
-            xtype: 'videoList',
-            playlistId: '2737D508F656CCF8',
-            hideText: 'Web 2.0 Summit 2010: '
         }
     ],
 

@@ -226,12 +226,14 @@ h4 {
     padding: 0.4em 1.2em;
 
     p {
+        text-align: justify;
         padding: 0.4em 0;
     }
 
-    .sponsor_list_heading {
+    .heading {
         font-weight: bold;
     }
+
     .sponsorList {
         margin: 10px 0 25px 0;
         padding-left: 0;
