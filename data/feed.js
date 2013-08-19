@@ -194,8 +194,7 @@ Ext.data.JsonP.feedCb({
             "title": "Almuerzo y asamblea de Presidentes de Federación",
             "url": "",
             "date": "09/21/2013",
-            "speakers": [
-            ],
+            "speakers": [],
             "proposal_type": "Asamblea",
             "id": 1,
             "time": "2013-09-21T13:00:00",
@@ -515,7 +514,7 @@ Ext.data.JsonP.feedCb({
             pretty_time: '20:00 hs.',
             title: "Sat chakra, coreografías, graduación y After Fest",
             description: "",
-            speakers: []
+            speakers: [derose]
         },
         {
             id: 29,
