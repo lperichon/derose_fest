@@ -1,5 +1,6 @@
-var olimpic = "Salón Olímpic";
-var paris =   "Salón Paris";
+var olimpic = "Salón Olímpic (piso 12)";
+var paris =   "Salón Paris (piso 1)";
+
 var viernes = "Viernes, 09/21/2013";
 var sabado  = "Sábado, 09/22/2013";
 var domingo = "Domingo, 09/23/2013";
@@ -263,7 +264,7 @@ Ext.data.JsonP.feedCb({
         },
         {
             id: 9,
-            room: 'Teatro del Globo, Marcelo T. de Alvear 1155.',
+            room: 'Teatro del Globo (Marcelo T. de Alvear 1155)',
             date: "09/21/2013",
             day: viernes,
             time: "2013-09-21T22:00:00",
