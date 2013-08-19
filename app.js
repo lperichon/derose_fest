@@ -107,7 +107,7 @@ Ext.application({
 
     launch: function() {
 
-        Ext.Viewport.setMasked({ xtype: 'loadmask' });
+//        Ext.Viewport.setMasked({ xtype: 'loadmask' });
 
         DeRoseFest.util.Proxy.process('data/feed.js', function() {
             Ext.Viewport.add({ xtype: 'main' });
