@@ -1,11 +1,13 @@
-var olimpic = "Salón Olímpic";
-var paris =   "Salón Paris";
+var olimpic = "Salón Olímpic (piso 12)";
+var paris =   "Salón Paris (piso 1)";
+
 var viernes = "Viernes, 09/21/2013";
 var sabado  = "Sábado, 09/22/2013";
 var domingo = "Domingo, 09/23/2013";
 
 var yael = {
     id: 13,
+    order: '10',
     icon: null,
     first_name: 'Yael',
     last_name: 'Barcesat',
@@ -20,6 +22,7 @@ var yael = {
 
 var edgardo = {
     id: 11,
+    order: '02',
     icon: null,
     first_name: 'Edgardo',
     last_name: 'Caramella',
@@ -34,6 +37,7 @@ var edgardo = {
 
 var fernanda = {
     id: 10,
+    order: '05',
     icon: null,
     first_name: 'Fernanda',
     last_name: 'Neis',
@@ -48,6 +52,7 @@ var fernanda = {
 
 var charles = {
     id: 12,
+    order: '04',
     icon: null,
     first_name: 'Charles',
     last_name: 'Maciel',
@@ -62,6 +67,7 @@ var charles = {
 
 var nina = {
     id: 9,
+    order: '05',
     icon: null,
     first_name: 'Nina',
     last_name: 'de Holanda',
@@ -76,6 +82,7 @@ var nina = {
 
 var mariahelena = {
     id: 8,
+    order: '03',
     icon: null,
     first_name: 'Maria Helena',
     last_name: 'Aguiar',
@@ -90,6 +97,7 @@ var mariahelena = {
 
 var vanessa = {
     id: 7,
+    order: '08',
     icon: null,
     first_name: 'Vanessa',
     last_name: 'de Holanda',
@@ -104,6 +112,7 @@ var vanessa = {
 
 var naiana = {
     id: 6,
+    order: '07',
     icon: null,
     first_name: 'Naiana',
     last_name: 'Ramos Alberti',
@@ -118,6 +127,7 @@ var naiana = {
 
 var melina = {
     id: 5,
+    order: '11',
     icon: null,
     first_name: 'Melina',
     last_name: 'Flores',
@@ -132,6 +142,7 @@ var melina = {
 
 var rogerio = {
     id: 4,
+    order: '09',
     icon: null,
     first_name: 'Rogério',
     last_name: 'Brant',
@@ -146,6 +157,7 @@ var rogerio = {
 
 var joris = {
     id: 3,
+    order: '06',
     icon: null,
     first_name: "Joris",
     photo: "resources/images/joris.jpg",
@@ -160,6 +172,7 @@ var joris = {
 
 var derose = {
     id: 2,
+    order: '01',
     icon: null,
     first_name: "",
     last_name: "DeRose",
@@ -181,8 +194,7 @@ Ext.data.JsonP.feedCb({
             "title": "Almuerzo y asamblea de Presidentes de Federación",
             "url": "",
             "date": "09/21/2013",
-            "speakers": [
-            ],
+            "speakers": [],
             "proposal_type": "Asamblea",
             "id": 1,
             "time": "2013-09-21T13:00:00",
@@ -251,7 +263,7 @@ Ext.data.JsonP.feedCb({
         },
         {
             id: 9,
-            room: 'Teatro del Globo, Marcelo T. de Alvear 1155.',
+            room: 'Teatro del Globo (Marcelo T. de Alvear 1155)',
             date: "09/21/2013",
             day: viernes,
             time: "2013-09-21T22:00:00",
@@ -502,7 +514,7 @@ Ext.data.JsonP.feedCb({
             pretty_time: '20:00 hs.',
             title: "Sat chakra, coreografías, graduación y After Fest",
             description: "",
-            speakers: []
+            speakers: [derose]
         },
         {
             id: 29,

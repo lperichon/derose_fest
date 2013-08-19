@@ -17,7 +17,6 @@ Ext.define('DeRoseFest.view.speaker.Card', {
 			{
 				xtype: 'speakers',
 				store: 'Speakers',
-				grouped: true,
 				pinHeaders: false
 			}
 		]
