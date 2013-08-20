@@ -18,7 +18,7 @@ Ext.define('DeRoseFest.view.session.Detail', {
             {
                 xtype: 'component',
                 cls: 'dark',
-                html: 'Speakers'
+                html: 'Disertantes'
             },
 			{
                 flex: 2,
