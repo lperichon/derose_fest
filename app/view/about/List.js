@@ -4,7 +4,7 @@ Ext.define('DeRoseFest.view.about.List', {
 	xtype: 'aboutList',
 
 	config: {
-		title: 'About',
+		title: 'Info',
 		ui: 'round',
 		itemTpl: [ '{title}' ]
 	},

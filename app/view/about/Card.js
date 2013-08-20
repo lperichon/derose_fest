@@ -5,8 +5,8 @@ Ext.define('DeRoseFest.view.about.Card', {
 
 	config: {
 
-		title: 'About',
-        iconCls: 'time',
+		title: 'Info',
+        iconCls: 'more',
 
         autoDestroy: false,
 
