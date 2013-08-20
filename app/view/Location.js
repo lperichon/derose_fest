@@ -19,12 +19,21 @@ Ext.define('DeRoseFest.view.Location', {
 	    },
         listeners: {
             maprender : function(comp, map) {
+            	// Icons are from http://mapicons.nicolasmollet.com using custom color #fcfc17
                 new google.maps.Marker({
                     map       : this.getMap(),
                     position  : new google.maps.LatLng(DeRoseFest.app.mapCenter[0], DeRoseFest.app.mapCenter[1]),
                     title     : 'DeRose Festival',
                     animation : google.maps.Animation.DROP,
                     icon : 'resources/images/hotel_0star.png'
+                });
+				
+				new google.maps.Marker({
+                    map       : this.getMap(),
+                    position  : new google.maps.LatLng(-34.586399,-58.389834),
+                    title     : 'Práctica al aire libre',
+                    animation : google.maps.Animation.DROP,
+                    icon : 'resources/images/park.png'
                 });
             }
         }
