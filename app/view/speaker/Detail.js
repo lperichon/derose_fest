@@ -18,7 +18,7 @@ Ext.define('DeRoseFest.view.speaker.Detail', {
                 html: 'Vivencias'
             },
 			{
-                flex: 2,
+                flex: 1,
 				xtype: 'list',
 				store: 'SpeakerSessions',
 				itemTpl: [
