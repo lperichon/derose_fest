@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+    <widget xmlns = "http://www.w3.org/ns/widgets"
+        xmlns:gap = "http://phonegap.com/ns/1.0"
+        id        = "com.padma.derose_fest" 
+        version   = "1.0.0">
+
+    <!-- versionCode is optional and Android only -->
+
+    <name>X DeRose Festival BA</name>
+
+    <description>
+        Aplicación para el DeRose Festival Buenos Aires 2013
+    </description>
+
+    <author href="https://build.phonegap.com" email="support@phonegap.com">
+        Luis Perichon
+    </author>
+
+    <preference name="phonegap-version" value="2.9.0" />
+
+    <preference name="show-splash-screen-spinner" value="false" />
+
+    <preference name="splash-screen-duration" value="6000" />
+
+    <icon src="resources/icons/icon@36.png" gap:platform="android" gap:density="ldpi" />
+    <icon src="resources/icons/icon@48.png" gap:platform="android" gap:density="mdpi" />
+    <icon src="resources/icons/icon@72.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="resources/icons/icon@96.png" gap:platform="android" gap:density="xhdpi" />
+
+    <gap:splash src="resources/startup/200x320.png" gap:platform="android" gap:density="ldpi" />
+    <gap:splash src="resources/startup/320x480.png" gap:platform="android" gap:density="mdpi" />
+    <gap:splash src="resources/startup/480x800.png" gap:platform="android" gap:density="hdpi" />
+    <gap:splash src="resources/startup/720x1280.png" gap:platform="android" gap:density="xhdpi" />
+</widget>
