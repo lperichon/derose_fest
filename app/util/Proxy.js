@@ -37,7 +37,7 @@ Ext.define('DeRoseFest.util.Proxy', {
 		            if (proposal.date) {
 		                sessionDays[proposal.date] = {
 		                    day: proposalModel.get('time').getDate(),
-		                    text: Ext.Date.format(proposalModel.get('time'), 'm/d'),
+		                    text: Ext.Date.format(proposalModel.get('time'), 'l'),
 		                    time: proposalModel.get('time')
 		                };
 		            }
@@ -60,6 +60,5 @@ Ext.define('DeRoseFest.util.Proxy', {
 		        callback();
 		    }
 		});
-
 	}
 });

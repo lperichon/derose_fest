@@ -88,6 +88,16 @@ Ext.application({
     ],
 
     launch: function() {
+        Ext.Date.dayNames = [
+            'Domingo',
+            'Lunes',
+            'Martes',
+            'Miércoles',
+            'Jueves',
+            'Viernes',
+            'Sábado'
+        ];
+
         DeRoseFest.util.Proxy.process('data/feed.js', function() {
             Ext.Viewport.add({ xtype: 'main' });
             Ext.Viewport.setMasked(false);
