@@ -4,9 +4,10 @@ Ext.define('DeRoseFest.view.session.Card', {
     xtype: 'sessionContainer',
 
     config: {
-
+        id: "sessions",
         title: 'Vivencias',
         iconCls: 'time',
+        defaultBackButtonText: "Atras",
 
         autoDestroy: false,
 

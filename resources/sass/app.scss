@@ -22,8 +22,11 @@ $index-bar-color: #666;
 @include sencha-toolbar-ui('dark', darken($base-color, 10%), $base-gradient);
 @include sencha-toolbar-ui('gray', #ccc);
 
-.x-toolbar-dark {
-    height: 100px;
+#sessions .x-toolbar-dark {
+    height: 110px;
+    img {
+        vertical-align: middle;
+    }
 }
 
 .x-toolbar-dark, .x-tabbar-gray {

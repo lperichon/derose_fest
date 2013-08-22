@@ -4,7 +4,7 @@ Ext.define('DeRoseFest.view.about.Card', {
 	xtype: 'aboutContainer',
 
 	config: {
-
+		defaultBackButtonText: "Atras",
 		title: 'Info',
         iconCls: 'more',
 
