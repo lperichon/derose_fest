@@ -8,6 +8,10 @@ Ext.define('DeRoseFest.view.session.Detail', {
 		layout: 'vbox',
 		title: '',
 
+		listeners: {
+            painted : function() { document.getElementsByClassName('x-toolbar-dark')[0].style.height='46px'; }
+        },		
+
 		items: [
 			{
                 flex: 1,

@@ -24,6 +24,9 @@ Ext.define('DeRoseFest.view.session.List', {
 				]
 			}
 		],
+		listeners: {
+            painted : function() { document.getElementsByClassName('x-toolbar-dark')[0].style.height='110px'; }
+        },		
         variableHeights: true,
         useSimpleItems: true,
 		itemTpl: [
@@ -40,5 +43,8 @@ Ext.define('DeRoseFest.view.session.List', {
 		Ext.Array.each(DeRoseFest.sessionDays, function(day) {
 			segmentedButton.add(day);
 		});
+	},
+	onPainted: function() {
+		document.getElementsByClassName('x-toolbar-dark')[0].style.height='110px';
 	}
 });
