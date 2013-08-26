@@ -29,6 +29,17 @@ $index-bar-color: #666;
     }
 }
 
+.x-button.facebook_share {
+    background: #3B5998 !important;
+    color: #FFF !important;
+}
+
+
+.x-button.twitter_share {
+    background: #4099FF !important;
+    color: #FFF !important;
+}
+
 .x-toolbar-dark, .x-tabbar-gray {
     background-image: url('../images/header.jpg');
     background-repeat: repeat-y;
