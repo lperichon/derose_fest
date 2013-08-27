@@ -29,16 +29,11 @@ $index-bar-color: #666;
     }
 }
 
-.x-button.facebook_share {
-    background: #3B5998 !important;
-    color: #FFF !important;
-}
+@include sencha-button-ui('facebook-share', #3B5998, 'glossy');
 
+@include sencha-button-ui('twitter-share', #4099FF, 'glossy');
 
-.x-button.twitter_share {
-    background: #4099FF !important;
-    color: #FFF !important;
-}
+@include sencha-button-ui('plus-share', #D34836, 'glossy');
 
 .x-toolbar-dark, .x-tabbar-gray {
     background-image: url('../images/header.jpg');
