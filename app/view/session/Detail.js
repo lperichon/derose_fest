@@ -37,33 +37,32 @@ Ext.define('DeRoseFest.view.session.Detail', {
             },
             {
                 xtype: 'toolbar',
-                ui: 'grey',
+                ui: 'leather',
+                layout:{
+                    pack: 'center'
+                },
                 items: [
 
                     {
                         xtype: 'button',
-                        itemId: 'facebook_share',
-                        cls: 'facebook_share',
+                        ui: 'facebook-share',
                         margin: '10',
-                        ui: 'action',
                         text: 'Facebook',
                         handler: facebook_handler
                     },
                     {
                         xtype: 'button',
-                        itemId: 'twitter_share',
-						cls: 'twitter_share',
                         margin: '10',
-                        ui: 'action',
-                        text: 'Twitter'
+                        ui: 'twitter-share',
+                        text: 'Twitter',
+                        handler: twitter_handler
                     },
                     {
                         xtype: 'button',
-                        itemId: 'plus_share',
-                        cls: 'plus_share',
+                        ui: 'plus-share',
                         margin: '10',
-                        ui: 'decline',
-                        text: 'Google+'
+                        text: 'Google+',
+                        handler: plus_handler
                     }
                 ]
             },

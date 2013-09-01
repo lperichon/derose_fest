@@ -30,6 +30,11 @@ Ext.application({
             url: 'data/about_fest.html'
         },
         {
+            title: "Ombudsman",
+            xtype: 'htmlPage',
+            url: 'data/ombudsman.html'
+        },
+        {
             title: 'Credits',
             xtype: 'htmlPage',
             url: 'data/credits.html'
