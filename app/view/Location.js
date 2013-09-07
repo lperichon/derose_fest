@@ -35,6 +35,14 @@ Ext.define('DeRoseFest.view.Location', {
                     animation : google.maps.Animation.DROP,
                     icon : 'resources/images/park.png'
                 });
+
+                new google.maps.Marker({
+                    map       : this.getMap(),
+                    position  : new google.maps.LatLng(-34.59679,-58.383504),
+                    title     : 'DeRose Art Company',
+                    animation : google.maps.Animation.DROP,
+                    icon : 'resources/images/theater.png'
+                });
             }
         }
 	}
