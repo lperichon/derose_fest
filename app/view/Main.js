@@ -13,7 +13,6 @@ Ext.define('DeRoseFest.view.Main', {
 		items: [
 			{ xclass: 'DeRoseFest.view.session.Card' },
 			{ xclass: 'DeRoseFest.view.speaker.Card' },
-			{ xclass: 'DeRoseFest.view.Tweets'   },
 			{ xclass: 'DeRoseFest.view.Location' },
 			{ xclass: 'DeRoseFest.view.about.Card'    }
 		]
