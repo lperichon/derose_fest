@@ -12,7 +12,8 @@ Ext.define('DeRoseFest.view.session.Info', {
         },		
 
 		tpl: Ext.create('Ext.XTemplate',
-			'<h3>{title} <small>{room}</small></h3>',
+			'<h3>{title}</h3>',
+			'<h4>{room}</h4>',
 			'<h4>{[Ext.Date.format(values.time, "l")]} a las {[this.formatTime(values.time)]}</h4>',
 			'<p>{description}</p>',
 			{

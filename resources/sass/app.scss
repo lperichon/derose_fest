@@ -45,10 +45,10 @@ $index-bar-color: #666;
 } 
 
 a, .link {
-  color: $base-color !important;
+  color: #FF0700 !important;
 }
 a:visited {
-  color: lighten($base-color, 15%) !important;
+  color: lighten(#FF0700, 15%) !important;
 }
 
 h3 {
