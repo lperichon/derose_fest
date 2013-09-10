@@ -47,6 +47,22 @@ Ext.define('DeRoseFest.view.Location', {
                             animation : google.maps.Animation.DROP,
                             icon : 'resources/images/theater.png'
                         });
+
+                        new google.maps.Marker({
+                            map : this.getMap(),
+                            position : new google.maps.LatLng(-34.589038, -58.390716),
+                            title : 'Maria de bambi',
+                            animation : google.maps.Animation.DROP,
+                            icon : 'resources/images/restaurant.png'
+                        });
+                        
+                        new google.maps.Marker({
+                            map : this.getMap(),
+                            position : new google.maps.LatLng(-34.589038, -58.390716),
+                            title : 'Maria de bambi',
+                            animation : google.maps.Animation.DROP,
+                            icon : 'resources/images/restaurant.png'
+                        });
                     }
                 }
             },
@@ -58,7 +74,8 @@ Ext.define('DeRoseFest.view.Location', {
                     data: [
                         {name: 'DeRose Festival', desc: "Hotel Etoile", lat: -34.58798, lng: -58.391127},
                         {name: 'Práctica al aire libre', desc: "Plaza San Martín de Tours", lat: -34.586399, lng: -58.389834},
-                        {name: 'DeRose Art Company', desc: "Teatro del Globo", lat: -34.59679, lng: -58.383504}
+                        {name: 'DeRose Art Company', desc: "Teatro del Globo", lat: -34.59679, lng: -58.383504},
+                        {name: 'Maria de bambi', desc: "20% descuento", lat: -34.589038, lng: -58.390716}
                     ]
                 },
                 itemTpl: '<div>{name} <span style="font-size:0.8em; color: #707070">{desc}</span></div>',
