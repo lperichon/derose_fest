@@ -90,7 +90,7 @@ h4 {
 .sessionInfo {
 
     padding: 0.9em;
-    background-image: url(../images/fondo-Paris-300.png);
+    background-image: url(../images/fondo.png);
 
     h3 {
         font-size: 1.2em;
@@ -175,7 +175,7 @@ h4 {
 
 .speakerInfo {
 
-    background-image: url(../images/fondo-Paris-300.png);
+    background-image: url(../images/fondo.png);
 
     .header {
         @include background-gradient(#eee);
@@ -228,7 +228,7 @@ h4 {
 
 .htmlPage {
 
-    background-image: url('../images/fondo-Paris-300.png');
+    background-image: url('../images/fondo.png');
     color: #333;
     line-height: 1.5em;
     font-size: 0.8em;
@@ -262,15 +262,15 @@ h4 {
 }
 
 .x-list-round .x-scroll-view {
-    background-image: url(../images/fondo-Paris-300.png);
+    background-image: url(../images/fondo.png);
 }
 
 .x-list {
-    background-image: url(../images/fondo-Paris-300.png);
+    background-image: url(../images/fondo.png);
 }
 
 .x-toolbar-leather {
-    background-image: url(../images/fondo-Paris-300.png);
+    background-image: url(../images/fondo.png);
 }
 
 .x-list-normal .x-list-item.x-list-item-tpl, .x-list-normal .x-list-item .x-dock-horizontal {

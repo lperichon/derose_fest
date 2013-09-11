@@ -22,12 +22,12 @@ Ext.application({
         {
             title: 'Sobre el Método DeRose',
             xtype: 'htmlPage',
-            url: 'data/about_mdr.html'
+            url: 'data/mdr.html'
         },
         {
             title: "Sobre el DeRose Festival",
             xtype: 'htmlPage',
-            url: 'data/about_fest.html'
+            url: 'data/fest.html'
         },
         {
             title: "Ombudsman",

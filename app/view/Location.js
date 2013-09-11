@@ -32,7 +32,7 @@ Ext.define('DeRoseFest.view.Location', {
                             position : new google.maps.LatLng(DeRoseFest.app.mapCenter[0], DeRoseFest.app.mapCenter[1]),
                             title : 'DeRose Festival',
                             animation : google.maps.Animation.DROP,
-                            icon : 'resources/images/hotel_0star.png'
+                            icon : 'resources/images/hotel.png'
                         });
                         google.maps.event.addListener(fest_marker, 'click', function() {
                           infowindow.setContent(fest_marker.get('title'));
