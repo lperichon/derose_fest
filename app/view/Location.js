@@ -111,6 +111,18 @@ Ext.define('DeRoseFest.view.Location', {
                           infowindow.setContent(freddo_marker.get('title'));
                           infowindow.open(this.getMap(),freddo_marker);
                         });
+                        
+                        sirop_marker = new google.maps.Marker({
+                            map : this.getMap(),
+                            position : new google.maps.LatLng(-34.592313,-58.389362),
+                            title : 'Sirop & Folie',
+                            animation : google.maps.Animation.DROP,
+                            icon : 'resources/images/restaurant.png'
+                        });
+                        google.maps.event.addListener(sirop_marker, 'click', function() {
+                          infowindow.setContent(sirop_marker.get('title'));
+                          infowindow.open(this.getMap(),sirop_marker);
+                        });
                     }
                 }
             },
@@ -126,6 +138,7 @@ Ext.define('DeRoseFest.view.Location', {
                         {name: 'Fiesta de los 10 años', desc: "Sede Cerviño (Rep. Arabe Siria 3088)", lat: -34.580048, lng: -58.41332},
                         {name: 'Maria de bambi', desc: "20% descuento", lat: -34.589038, lng: -58.390716},
                         {name: 'Primafila', desc: "10% descuento", lat: -34.585467, lng: -58.393337},
+                        {name: 'Sirop & Folie', desc: "10% descuento (efectivo)", lat: -34.592313, lng: -58.389362},
                         {name: 'Freddo', desc: "20% descuento", lat: -34.588148, lng: -58.390285}
                         
                     ]
