@@ -20,6 +20,20 @@ Ext.define('DeRoseFest.view.about.List', {
 		ui: 'round',
 		itemTpl: [ '{title}' ],
 		items:[{  
+            xtype: 'toolbar',
+            ui: 'leather',
+            docked:'top', 
+            layout:{
+                pack: 'center'
+            },
+            items: [
+                {
+                    xtype: 'label',
+                    html: 'Compartí esta aplicación!'
+                }
+            ] 
+        },
+        {  
         	xtype: 'toolbar',
             ui: 'leather',
             docked:'top', 
@@ -27,10 +41,6 @@ Ext.define('DeRoseFest.view.about.List', {
                 pack: 'center'
             },
             items: [
-            	{
-            		xtype: 'label',
-            		html: 'Compartí esta aplicación!'
-            	},
                 {
                     xtype: 'button',
                     ui: 'facebook-share',
