@@ -12,7 +12,7 @@ Ext.define('DeRoseFest.view.about.Card', {
 
 		items: [
 			{
-				xtype: 'aboutList'
+				xtype: 'aboutList',
 			}
 		]
 	}
