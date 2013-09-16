@@ -8,15 +8,15 @@ Ext.define('DeRoseFest.store.Sessions', {
         model: 'DeRoseFest.model.Session',
 
         grouper: {
-            sortProperty: 'time',
+            sortProperty: 'pretty_time',
             groupFn: function(record) {
-                return Ext.Date.format(record.get('time'), 'g:ia');
+                return record.get('pretty_time');
             }
         },
 
         sorters: [
             {
-                property: 'time',
+                property: 'pretty_time',
                 direction: 'ASC'
             },
             {

@@ -189,7 +189,7 @@ Ext.data.JsonP.feedCb({
         "proposals": [
         {
             "room": "Sirop Folie",
-            "end_time": "2013-09-20T13:00:00",
+            "end_time": "2013-09-20T14:00:00",
             "description": "",
             "title": "Almuerzo y asamblea de Presidentes de Federación",
             "url": "",
@@ -197,8 +197,8 @@ Ext.data.JsonP.feedCb({
             "speakers": [],
             "proposal_type": "Asamblea",
             "id": 1,
-            "time": "2013-09-20T13:00:00",
-            "pretty_time": "1:00pm",
+            "time": "2013-09-20T12:30:00",
+            "pretty_time": "12:30 hs.",
             "day": viernes
         },
         {
@@ -220,7 +220,7 @@ Ext.data.JsonP.feedCb({
             day: viernes,
             time: "2013-09-20T15:00:00",
             end_time: "2013-09-20T16:20:00",
-            pretty_time: '15:00 hs',
+            pretty_time: '15:00 hs.',
             title: "Práctica con énfasis en vocalizaciones",
             description: "",
             speakers: [melina]
@@ -331,7 +331,7 @@ Ext.data.JsonP.feedCb({
             day: sabado,
             time: "2013-09-21T13:30:00",
             end_time: "2013-09-21T14:50:00",
-            pretty_time: '13.30 hs.',
+            pretty_time: '13:30 hs.',
             title: "Práctica ortodoxa.",
             description: "",
             speakers: [fernanda, charles]
@@ -368,7 +368,7 @@ Ext.data.JsonP.feedCb({
             time: "2013-09-21T15:15:00",
             end_time: "2013-09-21T16:35:00",
             pretty_time: '15:15 hs.',
-            title: "Actualización del Concejo Administrativo y Colegiado de Presidentes de Federación, sólo para instructores de Unidades Acreditadas.",
+            title: "Encuentro de supervisados con el Maestro DeRose.",
             description: "",
             speakers: [derose,edgardo,charles]
         },

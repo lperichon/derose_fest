@@ -6,6 +6,7 @@ Ext.define('DeRoseFest.model.Session', {
 			'id',
 			'title',
 			'room',
+			'pretty_time',
 			{
 				name: 'time',
 				type: 'date',
