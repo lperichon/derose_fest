@@ -190,7 +190,7 @@ Ext.data.JsonP.feedCb({
         {
             "room": "Sirop Folie",
             "end_time": "2013-09-20T14:00:00",
-            "description": "",
+            "description": "Pasaje Vicente López y Montevideo",
             "title": "Almuerzo y asamblea de Presidentes de Federación",
             "url": "",
             "date": viernes,
