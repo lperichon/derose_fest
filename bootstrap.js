@@ -12,7 +12,8 @@ Ext.Loader.addClassPathMappings({
   "Ext.device.SQLite.Database": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.SQLite.SQLResultSet": "touch/src/device/sqlite/Sencha.js",
   "Ext.device.SQLite.SQLResultSetRowList": "touch/src/device/sqlite/Sencha.js",
-  "Ext.device.SQLite.SQLTransaction": "touch/src/device/sqlite/Sencha.js"
+  "Ext.device.SQLite.SQLTransaction": "touch/src/device/sqlite/Sencha.js",
+  "Ext.ux": "ux"
 });
 Ext.ClassManager.addNameAlternateMappings({
   "DeRoseFest.controller.About": [],
@@ -542,6 +543,7 @@ Ext.ClassManager.addNameAlternateMappings({
   "Ext.util.translatable.CssTransform": [],
   "Ext.util.translatable.Dom": [],
   "Ext.util.translatable.ScrollPosition": [],
+  "Ext.ux.LeafletMap": [],
   "Ext.viewport.Android": [],
   "Ext.viewport.Default": [],
   "Ext.viewport.Ios": [],
@@ -1213,6 +1215,9 @@ Ext.ClassManager.addNameAliasMappings({
   "Ext.util.translatable.CssTransform": [],
   "Ext.util.translatable.Dom": [],
   "Ext.util.translatable.ScrollPosition": [],
+  "Ext.ux.LeafletMap": [
+    "widget.leafletmap"
+  ],
   "Ext.viewport.Android": [],
   "Ext.viewport.Default": [
     "widget.viewport"

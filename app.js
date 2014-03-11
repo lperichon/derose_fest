@@ -10,8 +10,14 @@
     will need to resolve manually.
 */
 
+// enable Ext autoloader
+Ext.Loader.setConfig({
+    enabled: true
+});
+
 //<debug>
 Ext.Loader.setPath({
+    'Ext.ux': 'ux',
     'Ext': 'src',
     'DeRoseFest': 'app'
 });
