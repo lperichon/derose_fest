@@ -1,13 +1,15 @@
-var facebook_handler = function (btn, evt) {
-    window.location = 'https://www.facebook.com/sharer/sharer.php?u=http%3A%2F%2Fderosefestival.com.ar';
+var share_handler = function (btn, evt) {
+    window.plugins.socialsharing.share('Message only');
 }
-
-var twitter_handler = function (btn, evt) {
-    window.location = 'http://twitter.com/home?status=Voy%20a%20participar%20de%20XXX%20en%20el%20DeroseFestival%20';
-}
-
-var plus_handler = function (btn, evt) {
-    window.location = 'https://plus.google.com/share?url=http://www.derosefestival.com.ar';
+var toggle_checkin_handler = function (btn, evt) {
+    date = new Date();
+    date.setMinutes(date.getMinutes()+1);
+    window.plugin.notification.local.add({
+        id:         "1",  // A unique id of the notifiction
+        date:       date,    // This expects a date object
+        message:    "Testing 123",  // The message that is displayed
+        title:      "Test"  // The title of the message
+    });
 }
 
 Ext.define('DeRoseFest.view.session.Detail', {
@@ -33,7 +35,7 @@ Ext.define('DeRoseFest.view.session.Detail', {
             {
                 xtype: 'component',
                 cls: 'dark',
-                html: 'Compartí en la web'
+                html: 'Acciones'
             },
             {
                 xtype: 'toolbar',
@@ -42,27 +44,19 @@ Ext.define('DeRoseFest.view.session.Detail', {
                     pack: 'center'
                 },
                 items: [
-
                     {
                         xtype: 'button',
-                        ui: 'facebook-share',
+                        ui: 'toggle-checkin',
                         margin: '10',
-                        text: 'Facebook',
-                        handler: facebook_handler
+                        text: 'Check In/Out',
+                        handler: toggle_checkin_handler
                     },
                     {
                         xtype: 'button',
+                        ui: 'share',
                         margin: '10',
-                        ui: 'twitter-share',
-                        text: 'Twitter',
-                        handler: twitter_handler
-                    },
-                    {
-                        xtype: 'button',
-                        ui: 'plus-share',
-                        margin: '10',
-                        text: 'Google+',
-                        handler: plus_handler
+                        text: 'Share',
+                        handler: share_handler
                     }
                 ]
             },

@@ -1,34 +1,52 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-    <widget xmlns = "http://www.w3.org/ns/widgets"
+<widget xmlns = "http://www.w3.org/ns/widgets"
         xmlns:gap = "http://phonegap.com/ns/1.0"
         id        = "com.padma.derose_fest" 
-        version   = "1.0.0">
+        version   = "1.1.0">
 
     <!-- versionCode is optional and Android only -->
 
-    <name>X DeRose Festival BA</name>
+    <name>XI DeRose Festival BA</name>
 
     <description>
-        Aplicación para el DeRose Festival Buenos Aires 2013
+        Aplicación para el DeRose Festival Buenos Aires 2014
     </description>
 
     <author href="https://build.phonegap.com" email="support@phonegap.com">
         Luis Perichon
     </author>
 
-    <preference name="phonegap-version" value="2.9.0" />
+    <preference name="phonegap-version" value="3.3.0" />
 
     <preference name="show-splash-screen-spinner" value="false" />
 
-    <preference name="splash-screen-duration" value="6000" />
+    <preference name="splash-screen-duration" value="5000" />
 
-    <icon src="resources/icons/icon@36.png" gap:platform="android" gap:density="ldpi" />
-    <icon src="resources/icons/icon@48.png" gap:platform="android" gap:density="mdpi" />
-    <icon src="resources/icons/icon@72.png" gap:platform="android" gap:density="hdpi" />
-    <icon src="resources/icons/icon@96.png" gap:platform="android" gap:density="xhdpi" />
+    <preference name="permissions" value="none"/>
+
+    <icon src="resources/icons/icon36.png" gap:platform="android" gap:density="ldpi" />
+    <icon src="resources/icons/icon48.png" gap:platform="android" gap:density="mdpi" />
+    <icon src="resources/icons/icon72.png" gap:platform="android" gap:density="hdpi" />
+    <icon src="resources/icons/icon96.png" gap:platform="android" gap:density="xhdpi" />
+
+    <icon src="resources/icons/icon.png" gap:platform="ios" width="57" height="57" />
+    <icon src="resources/icons/icon72.png" gap:platform="ios" width="72" height="72" />
+    <icon src="resources/icons/icon2x.png" gap:platform="ios" width="114" height="114" />
+
+    <!-- retina iPad support: PhoneGap 2.5.0+ only -->
+    <icon src="resources/icons/icon144.png" gap:platform="ios" width="144" height="144" />
 
     <gap:splash src="resources/startup/200x320.png" gap:platform="android" gap:density="ldpi" />
     <gap:splash src="resources/startup/320x480.png" gap:platform="android" gap:density="mdpi" />
     <gap:splash src="resources/startup/480x800.png" gap:platform="android" gap:density="hdpi" />
     <gap:splash src="resources/startup/720x1280.png" gap:platform="android" gap:density="xhdpi" />
+
+    <gap:splash src="resources/startup/320x480.png" gap:platform="ios" width="320" height="480" />
+    <gap:splash src="resources/startup/640x960.png" gap:platform="ios" width="640" height="960" />
+    <gap:splash src="resources/startup/640x1136.png" gap:platform="ios" width="640" height="1136" />
+    <gap:splash src="resources/startup/1034x748.png" gap:platform="ios" width="1024" height="748" />
+    <gap:splash src="resources/startup/768x1004.png" gap:platform="ios" width="768" height="1004" />
+
+    <gap:plugin name="de.appplant.cordova.plugin.local-notification" />
+    <gap:plugin name="nl.x-services.plugins.socialsharing" />
 </widget>
