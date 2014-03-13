@@ -24,6 +24,25 @@ Ext.define('DeRoseFest.controller.Sessions', {
 			},
 			speakers: {
 				itemtap: 'onSpeakerTap'
+			},
+			'#checkin_button': {
+				tap: function() {
+					data = this.getSessionInfo().getRecord().data;
+                	date = new Date(); // data.date;
+				    date.setMinutes(date.getMinutes() + 1); //-15);
+				    window.plugin.notification.local.add({
+				        id:         data.id.toString(),  // A unique id of the notifiction
+				        date:       date,    // This expects a date object
+				        message:    data.pretty_time + ' en ' + data.room,  // The message that is displayed
+				        title:      data.title  // The title of the message
+				    });
+            	}
+			},
+			'#share_button': {
+				tap: function() {
+					data = this.getSessionInfo().getRecord().data;
+                	window.plugins.socialsharing.share('Voy a participar de \"' + data.title + '\" en el #DeRoseFestivalBA', 'X1 DeRose Festival Buenos Aires', 'http://www.derosemartinez.com.ar/derose_fest/resources/images/afiche.jpg', 'http://www.derosefestival.com.ar');
+            	}
 			}
 		}
 	},

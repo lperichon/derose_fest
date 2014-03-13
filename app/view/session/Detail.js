@@ -1,17 +1,3 @@
-var share_handler = function (btn, evt) {
-    window.plugins.socialsharing.share('Message only');
-}
-var toggle_checkin_handler = function (btn, evt) {
-    date = new Date();
-    date.setMinutes(date.getMinutes()+1);
-    window.plugin.notification.local.add({
-        id:         "1",  // A unique id of the notifiction
-        date:       date,    // This expects a date object
-        message:    "Testing 123",  // The message that is displayed
-        title:      "Test"  // The title of the message
-    });
-}
-
 Ext.define('DeRoseFest.view.session.Detail', {
 
 	extend: 'Ext.Container',
@@ -49,14 +35,14 @@ Ext.define('DeRoseFest.view.session.Detail', {
                         ui: 'toggle-checkin',
                         margin: '10',
                         text: 'Check In/Out',
-                        handler: toggle_checkin_handler
+                        id: 'checkin_button'
                     },
                     {
                         xtype: 'button',
                         ui: 'share',
                         margin: '10',
                         text: 'Share',
-                        handler: share_handler
+                        id: 'share_button'
                     }
                 ]
             },
