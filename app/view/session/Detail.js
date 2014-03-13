@@ -32,16 +32,23 @@ Ext.define('DeRoseFest.view.session.Detail', {
                 items: [
                     {
                         xtype: 'button',
-                        ui: 'toggle-checkin',
+                        ui: 'notify_button',
                         margin: '10',
-                        text: 'Check In/Out',
-                        id: 'checkin_button'
+                        text: 'Asistire',
+                        id: 'notify_button'
                     },
                     {
                         xtype: 'button',
-                        ui: 'share',
+                        ui: 'cancel_button',
                         margin: '10',
-                        text: 'Share',
+                        text: 'No Asistire',
+                        id: 'cancel_button'
+                    },
+                    {
+                        xtype: 'button',
+                        ui: 'share_button',
+                        margin: '10',
+                        text: 'Compartí',
                         id: 'share_button'
                     }
                 ]
