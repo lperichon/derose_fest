@@ -1,5 +1,4 @@
-var fest_marker = L.marker(new L.LatLng(-34.58798,-58.391127), {icon: L.icon({iconUrl: 'resources/images/fest.png'})});
-var park_marker = L.marker(new L.LatLng(-34.586399,-58.389834), {icon: L.icon({iconUrl: 'resources/images/park.png'})});
+var fest_marker = L.marker(new L.LatLng(40.653519,-7.912936), {icon: L.icon({iconUrl: 'resources/images/fest.png'})});
 Ext.define('DeRoseFest.view.Location', {
     extend: 'Ext.Panel',
 
@@ -25,14 +24,13 @@ Ext.define('DeRoseFest.view.Location', {
                 enableOwnPositionMarker: false,
                 tileLayerUrl: 'resources/tiles/{z}/{x}/{y}.png',
                 mapOptions: {
-                    center: new L.LatLng(-34.58798,-58.391127),
+                    center: new L.LatLng(40.653519,-7.912936),
                     zoom: 15
                 },
                 listeners: {
                     maprender : function(comp, map) {
                      // Icons are from http://mapicons.nicolasmollet.com using custom color #fcfc17
-                     fest_marker.addTo(map).bindPopup("<b>DeRose Festival</b><br>Hotel Etoile");
-                     park_marker.addTo(map).bindPopup("<b>Práctica al aire libre</b><br>Plaza San Martín de Tours");
+                     fest_marker.addTo(map).bindPopup("<b>DeRose Festival</b><br>Pousada de Viseu");
                     }
                 }
             },
@@ -42,8 +40,7 @@ Ext.define('DeRoseFest.view.Location', {
                 fields: [{name:'name'}],
                 store: {
                     data: [
-                        {name: 'DeRose Festival', desc: "Hotel Etoile", lat: -34.58798, lng: -58.391127, marker: fest_marker},
-                        {name: 'Práctica al aire libre', desc: "Plaza San Martín de Tours", lat: -34.586399, lng: -58.389834, marker: park_marker}
+                        {name: 'DeRose Festival', desc: "Pousada de Viseu", lat: 40.653519, lng: -7.912936, marker: fest_marker}
                         
                     ]
                 },
