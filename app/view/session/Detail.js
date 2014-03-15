@@ -33,7 +33,7 @@ Ext.define('DeRoseFest.view.session.Detail', {
             {
                 xtype: 'component',
                 cls: 'dark',
-                html: 'Compartí en la web'
+                html: 'Compartilhe este aplicativo'
             },
             {
                 xtype: 'toolbar',
@@ -70,7 +70,7 @@ Ext.define('DeRoseFest.view.session.Detail', {
             {
                 xtype: 'component',
                 cls: 'dark',
-                html: 'Disertantes'
+                html: 'Ministrantes'
             },
 			{
                 flex: 2,

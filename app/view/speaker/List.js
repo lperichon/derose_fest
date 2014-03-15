@@ -4,7 +4,7 @@ Ext.define('DeRoseFest.view.speaker.List', {
 	xtype: 'speakers',
 
 	config: {
-		title: 'Disertantes',
+		title: 'Ministrantes',
 		itemCls: 'speaker',
         variableHeights: true,
 		itemTpl: [

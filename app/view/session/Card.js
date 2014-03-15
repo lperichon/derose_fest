@@ -5,7 +5,7 @@ Ext.define('DeRoseFest.view.session.Card', {
 
     config: {
         id: "sessions",
-        title: 'Vivencias',
+        title: 'Vivências',
         iconCls: 'time',
         defaultBackButtonText: "Atras",
 

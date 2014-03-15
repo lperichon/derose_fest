@@ -113,11 +113,11 @@ Ext.application({
     launch: function() {
         Ext.Date.dayNames = [
             'Domingo',
-            'Lunes',
-            'Martes',
-            'Miércoles',
-            'Jueves',
-            'Viernes',
+            'Segunda',
+            'Terça',
+            'Quarta',
+            'Quinta',
+            'Sexta',
             'Sábado'
         ];
 

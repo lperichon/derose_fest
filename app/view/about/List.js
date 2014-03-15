@@ -29,7 +29,7 @@ Ext.define('DeRoseFest.view.about.List', {
             items: [
                 {
                     xtype: 'label',
-                    html: 'Compartí esta aplicación!'
+                    html: 'Compartilhe este aplicativo!'
                 }
             ] 
         },

@@ -6,7 +6,7 @@ Ext.define('DeRoseFest.view.speaker.Card', {
 	config: {
 		defaultBackButtonText: "Atras",
 		tab: {
-			title: 'Disertantes',
+			title: 'Ministrantes',
 			iconCls: 'team',
 			action: 'speakersTab'
 		},
