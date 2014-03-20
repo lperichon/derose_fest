@@ -30,6 +30,7 @@ Ext.define('DeRoseFest.controller.Sessions', {
 				tap: function() {
 					data = this.getSessionInfo().getRecord().data;
 
+					// TODO: Validate collision with another session already scheduled.
 
 					this.getCancelButton().show();
 					this.getSessionNotifyButton().hide();
@@ -105,17 +106,6 @@ Ext.define('DeRoseFest.controller.Sessions', {
 		this.session.setTitle(record.get('title'));
 		this.getSessionContainer().push(this.session);
 		this.getSessionInfo().setRecord(record);
-
-		this.getCancelButton().hide();
-		// This functionality is only available on v. 0.7.3
-		// window.plugin.notification.local.isScheduled(record.data.id.toString(), function (isScheduled) {
-		// 	if (isScheduled) {
-		// 		this.getSessionNotifyButton().hide();
-		// 		this.getCancelButton().show();
-		// 	} else {
-		// 		this.getCancelButton().hide();
-		// 	}
-		// });
 	},
 
 	onSpeakerTap: function(list, idx, el, record) {
