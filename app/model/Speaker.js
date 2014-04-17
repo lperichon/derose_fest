@@ -13,7 +13,8 @@ Ext.define('DeRoseFest.model.Speaker', {
 			'photo',
 			'affiliation',
 			'url',
-			'twitter'
+			'twitter',
+			'name'
 		]
 	},
 

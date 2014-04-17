@@ -87,6 +87,29 @@ h4 {
 
 }
 
+.x-list-item .session {
+    height: 81px;
+
+    .avatar {
+        background-position: center center;
+        background-repeat: none;
+        display: inline-block;
+        border: 0;
+        width: 80px;
+        height: 80px;
+        background-size: 80px auto;
+    }
+
+    .info {
+        width: calc(100% - 80px);
+        height: 80px;
+        display: inline-block;
+        @include filter-gradient(#c5bbba, #928783, vertical); // IE6-9
+        @include background-image(linear-gradient(top, rgba(197,187,186,1) 0%,rgba(146,135,131,1) 100%));
+        vertical-align: top;
+    }
+}
+
 .sessionInfo {
 
     padding: 0.9em;
@@ -148,21 +171,11 @@ h4 {
     }
 }
 
-.x-list-item.speaker {
+.x-list-item.speaker, .x-list-item .session {
 
     font-size: 0.9em;
     line-height: 1.4em;
 
-    .avatar {
-        background-position: center center;
-        -webkit-border-radius: 0.5em;
-        float: left;
-        border: 0;
-        border-radius: 0.5em;
-        width: 45px;
-        height: 45px;
-        background-size: 47px auto;
-    }
     h3 {
         font-weight: bold;
         margin-left: 60px;
@@ -186,14 +199,12 @@ h4 {
 
     .avatar {
         background-position: center center;
-        -webkit-border-radius: 0.5em;
         float: left;
         border: 0;
-        border-radius: 0.5em;
         margin-right: 10px;
-        width: 60px;
-        height: 60px;
-        background-size: 62px auto;
+        width: 75px;
+        height: 75px;
+        background-size: 75px auto;
     }
 
     p {
@@ -267,6 +278,14 @@ h4 {
 
 .x-list {
     background-image: url(../images/fondo.png);
+}
+
+.x-list#ext-sessions-1 {
+    background-image: url(../images/header.jpg);
+}
+
+.x-list#ext-sessions-1 #ext-sessions-1.x-list-item .x-list-item-body, .x-list#ext-sessions-1 .x-list-item.x-list-item-tpl .x-innerhtml {
+    padding: 0;
 }
 
 .x-toolbar-leather {

@@ -29,9 +29,27 @@ Ext.define('DeRoseFest.view.session.List', {
         },		
         variableHeights: true,
         useSimpleItems: true,
-		itemTpl: [
-			'<div class="session"><div class="title">{title}</div><div class="room">{room}</div></div>'
-		]
+		itemTpl: new Ext.XTemplate(
+			'<div class="session">',
+				'<tpl if="speakerIds.length &gt; 0">',
+	            	'<div class="avatar" style="background-image: url({[this.speaker(values.speakerIds[0]).get(\'photo\')]});"></div>',
+	        	'</tpl>',
+	        	'<div class="info">',
+	        	    '<tpl if="speakerIds.length &gt; 0">',
+	        	        '<div class="name">{[this.speaker(values.speakerIds[0]).get(\'name\')]}</div>',
+	        	    '</tpl>',
+	        	    '<div class="title">{title}</div>',
+	        	    '<div class="room">{room}</div>',
+	        	'</div>',
+        	'</div>',
+        	{
+             speaker: function (id) {
+             	var speakerStore = Ext.getStore('Speakers');
+             	var speaker = speakerStore.getById(id);
+                return speaker;
+             }
+         }
+		)
 	},
 
 	initialize: function() {
