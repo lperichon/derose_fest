@@ -501,7 +501,7 @@ Ext.data.JsonP.feedCb({
             pretty_time: '15:15 hs.',
             title: "Sonidos de poder",
             description: "",
-            speakers: [derose]
+            speakers: [charles]
         },
         {
             id: 26,

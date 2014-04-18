@@ -1,4 +1,4 @@
-$base-color: #FFD700;
+$base-color: #dfbf51;
 $list-header-color: #666;
 $list-header-bg-color: #ccc;
 
@@ -45,10 +45,10 @@ $index-bar-color: #666;
 } 
 
 a, .link {
-  color: #FF0700 !important;
+  color: #dfbf51 !important;
 }
 a:visited {
-  color: lighten(#FF0700, 15%) !important;
+  color: lighten(#dfbf51, 15%) !important;
 }
 
 h3 {
@@ -74,6 +74,7 @@ h4 {
         overflow: hidden;
         text-overflow: ellipsis;
         white-space: nowrap;
+        font-family: 'sorts_mill_goudyitalic';
     }
 
     .room {
@@ -107,6 +108,13 @@ h4 {
         @include filter-gradient(#c5bbba, #928783, vertical); // IE6-9
         @include background-image(linear-gradient(top, rgba(197,187,186,1) 0%,rgba(146,135,131,1) 100%));
         vertical-align: top;
+        padding: 10px;
+        font-family: 'sorts_mill_goudyregular';
+
+        .title {
+            font-family: 'sorts_mill_goudyitalic';
+            font-size: 22px;
+        }
     }
 }
 
@@ -114,6 +122,16 @@ h4 {
 
     padding: 0.9em;
     background-image: url(../images/fondo.png);
+
+    .avatar {
+        background-position: center center;
+        background-repeat: none;
+        display: inline-block;
+        border: 0;
+        width: 80px;
+        height: 80px;
+        background-size: 80px auto;
+    }
 
     h3 {
         font-size: 1.2em;
@@ -298,4 +316,8 @@ h4 {
 
 .x-list-normal .x-list-item.x-list-item-tpl, .x-list-normal .x-list-item .x-dock-horizontal {
     border-top: 1px solid #CCC;
+}
+
+.x-title {
+    font-family: 'sorts_mill_goudyregular';
 }
