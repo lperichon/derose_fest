@@ -90,6 +90,9 @@ h4 {
 
 .x-list-item .session {
     height: 81px;
+    @include filter-gradient(#c5bbba, #928783, vertical); // IE6-9
+    @include background-image(linear-gradient(top, rgba(197,187,186,1) 0%,rgba(146,135,131,1) 100%));
+
 
     .avatar {
         background-position: center center;
@@ -102,18 +105,18 @@ h4 {
     }
 
     .info {
-        width: calc(100% - 80px);
         height: 80px;
         display: inline-block;
         @include filter-gradient(#c5bbba, #928783, vertical); // IE6-9
         @include background-image(linear-gradient(top, rgba(197,187,186,1) 0%,rgba(146,135,131,1) 100%));
         vertical-align: top;
         padding: 10px;
-        font-family: 'sorts_mill_goudyregular';
+        font-size: 16px;
 
         .title {
             font-family: 'sorts_mill_goudyitalic';
-            font-size: 22px;
+            font-size: 18px;
+            font-weight: bold;
         }
     }
 }
@@ -123,19 +126,10 @@ h4 {
     padding: 0.9em;
     background-image: url(../images/fondo.png);
 
-    .avatar {
-        background-position: center center;
-        background-repeat: none;
-        display: inline-block;
-        border: 0;
-        width: 80px;
-        height: 80px;
-        background-size: 80px auto;
-    }
-
     h3 {
         font-size: 1.2em;
         margin-bottom: .1em;
+        font-family: 'sorts_mill_goudyitalic';
         small {
           color: $base-color;
         }
@@ -194,13 +188,30 @@ h4 {
     font-size: 0.9em;
     line-height: 1.4em;
 
-    h3 {
-        font-weight: bold;
-        margin-left: 60px;
+    .avatar {
+        background-position: center center;
+        background-repeat: none;
+        display: inline-block;
+        border: 0;
+        width: 80px;
+        height: 80px;
+        background-size: 80px auto;
     }
-    h4 {
-        color: #999;
-        margin-left: 60px;
+
+    .info {
+        display: inline-block;
+        vertical-align: top;
+
+        h3 {
+            font-family: 'sorts_mill_goudyitalic';
+            font-weight: bold;
+            margin-left: 20px;
+
+        }
+        h4 {
+            color: #999;
+            margin-left: 20px;
+        }
     }
 }
 
@@ -298,8 +309,13 @@ h4 {
     background-image: url(../images/fondo.png);
 }
 
-.x-list#ext-sessions-1 {
-    background-image: url(../images/header.jpg);
+.x-list-normal .x-list-item.x-item-selected.x-list-item-tpl, .x-list-normal .x-list-item.x-item-selected .x-dock-horizontal {
+    border-top-color: none;
+}
+
+.x-list .x-list-item.x-item-selected .x-dock-horizontal, .x-list .x-list-item.x-item-selected.x-list-item-tpl {
+    background-color: none;
+    background-image: none;
 }
 
 .x-list#ext-sessions-1 #ext-sessions-1.x-list-item .x-list-item-body, .x-list#ext-sessions-1 .x-list-item.x-list-item-tpl .x-innerhtml {
@@ -318,6 +334,6 @@ h4 {
     border-top: 1px solid #CCC;
 }
 
-.x-title {
+html, body {
     font-family: 'sorts_mill_goudyregular';
 }

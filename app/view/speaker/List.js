@@ -9,8 +9,10 @@ Ext.define('DeRoseFest.view.speaker.List', {
         variableHeights: true,
 		itemTpl: [
 			'<div class="avatar" style="background-image: url({photo});"></div>',
-			'<h3>{first_name} {last_name}</h3>',
-			'<h4>{position}</h4>'
+			'<div class="info">',
+				'<h3>{first_name} {last_name}</h3>',
+				'<h4>{position}</h4>',
+			'</div>'
 		]
 	}
 });

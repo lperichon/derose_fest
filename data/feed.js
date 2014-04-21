@@ -175,15 +175,15 @@ var nilzo = {
     id: 1,
     order: '12',
     icon: null,
-    first_name: "Joris",
-    photo: "resources/images/joris.jpg",
-    position: "Presidente de la Federación del Método DeRose de Santa Catarina, Brasil",
-    name: "Prof. Joris Marengo",
+    first_name: "Nilzo",
+    photo: "resources/images/nilzo.jpg",
+    position: "",
+    name: "Prof. Nilzo Andrade",
     affiliation: "",
-    url: "http://www.novoexecutivo.com.br/",
-    bio: "<p>Autor del libro Yôga Antigo para iniciantes.</p>",
+    url: "",
+    bio: "",
     twitter: "",
-    last_name: "Marengo"
+    last_name: "Andrade"
 };
 
 var derose = {
@@ -451,7 +451,7 @@ Ext.data.JsonP.feedCb({
             time: "2014-09-21T12:00:00",
             end_time: "2014-09-21T13:20:00",
             pretty_time: '12:00 hs.',
-            title: "La rutina del practicante del Método DeRose",
+            title: "La rutina del practicante",
             description: "",
             speakers: [nilzo]
         },
