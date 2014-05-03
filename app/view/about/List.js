@@ -31,7 +31,7 @@ Ext.define('DeRoseFest.view.about.List', {
             items: [
                 {
                     xtype: 'button',
-                    ui: 'facebook-share',
+                    ui: 'fb_share_button',
                     margin: '10',
                     text: 'Facebook',
                     id: 'facebook_share_button'
@@ -39,7 +39,7 @@ Ext.define('DeRoseFest.view.about.List', {
                 {
                     xtype: 'button',
                     margin: '10',
-                    ui: 'twitter-share',
+                    ui: 'twitter_share_button',
                     text: 'Twitter',
                     id: 'twitter_share_button'
                 }

@@ -19,12 +19,12 @@ Ext.define('DeRoseFest.controller.About', {
 			'#facebook_share_button': {
 				tap: function() {
                 	window.plugins.socialsharing.shareViaFacebook('Voy a participar del #DeRoseFestivalBA', 
-                		'X1 DeRose Festival Buenos Aires', 
+                		null, 
                 		'http://www.derosemartinez.com.ar/derose_fest/resources/images/afiche.jpg', 
-                		'http://www.derosefestival.com.ar');
+                		null);
             	}
 			},
-			'twitter_share_button': {
+			'#twitter_share_button': {
 				tap: function() {
                 	window.plugins.socialsharing.shareViaTwitter('Voy a participar del #DeRoseFestivalBA', 
                 		'X1 DeRose Festival Buenos Aires', 

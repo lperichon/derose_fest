@@ -29,9 +29,9 @@ $index-bar-color: #666;
     }
 }
 
-@include sencha-button-ui('facebook-share', #3B5998, 'glossy');
+@include sencha-button-ui('fb_share_button', #3B5998, 'glossy');
 
-@include sencha-button-ui('twitter-share', #4099FF, 'glossy');
+@include sencha-button-ui('twitter_share_button', #4099FF, 'glossy');
 
 @include sencha-button-ui('plus-share', #D34836, 'glossy');
 

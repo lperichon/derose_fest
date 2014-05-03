@@ -46,10 +46,17 @@ Ext.define('DeRoseFest.view.session.Detail', {
                     },
                     {
                         xtype: 'button',
-                        ui: 'share_button',
+                        ui: 'twitter_share_button',
                         margin: '10',
-                        text: 'Compartí',
-                        id: 'share_button'
+                        text: 'Tweet',
+                        id: 'twitter_share_button'
+                    },
+                    {
+                        xtype: 'button',
+                        ui: 'fb_share_button',
+                        margin: '10',
+                        text: 'Share',
+                        id: 'fb_share_button'
                     }
                 ]
             },

@@ -36,7 +36,7 @@ Ext.define('DeRoseFest.controller.Sessions', {
 					this.getSessionNotifyButton().hide();
 			
 					date = new Date(); // data.date;
-				    date.setMinutes(date.getMinutes() + 1); //-15);
+				    date.setMinutes(date.getMinutes() - 15);
 				    window.plugin.notification.local.add({
 				        id:         data.id.toString(),  // A unique id of the notifiction
 				        date:       date,    // This expects a date object
@@ -56,13 +56,22 @@ Ext.define('DeRoseFest.controller.Sessions', {
 
 				}
 			},
-			'#share_button': {
+			'#twitter_share_button': {
 				tap: function() {
 					data = this.getSessionInfo().getRecord().data;
-                	window.plugins.socialsharing.share('Voy a participar de \"' + data.title + '\" en el #DeRoseFestivalBA', 
-                		'X1 DeRose Festival Buenos Aires', 
+                	window.plugins.socialsharing.shareViaTwitter('Voy a participar de \"' + data.title + '\" en el #DeRoseFestivalBA', 
+                		'XI DeRose Festival Buenos Aires', 
                 		'http://www.derosemartinez.com.ar/derose_fest/resources/images/afiche.jpg', 
                 		'http://www.derosefestival.com.ar');
+            	}
+			},
+			'#fb_share_button': {
+				tap: function() {
+					data = this.getSessionInfo().getRecord().data;
+                	window.plugins.socialsharing.shareViaFacebook('Voy a participar de \"' + data.title + '\" en el #DeRoseFestivalBA', 
+                		null, 
+                		'http://www.derosemartinez.com.ar/derose_fest/resources/images/afiche.jpg', 
+                		null);
             	}
 			}
 		}
