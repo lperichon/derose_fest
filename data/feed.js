@@ -1,532 +1,686 @@
-var olimpic = "Salón Olímpic (piso 12)";
-var paris =   "Salón Paris (piso 1)";
+var sala1 = "Sala 1";
+var sala2 = "Sala 2";
+var sala3 = "Sala 3";
 
-var viernes = "Viernes, 09/20/2013";
-var sabado  = "Sábado, 09/21/2013";
-var domingo = "Domingo, 09/22/2013";
+var viernes = "Sexta-feira, 06/13/2014";
+var sabado  = "Sábado, 06/14/2014";
+var domingo = "Domingo, 06/15/2014";
 
-var yael = {
-    id: 13,
-    order: '10',
-    icon: null,
-    first_name: 'Yael',
-    last_name: 'Barcesat',
-    photo: "resources/images/yael.jpg",
-    position: "Vicepresidente de la Federación del Método DeRose de Buenos Aires, Argentina.<br/>Directora de la Sede Decana.",
-    name: "Prof. Yael Barcesat",
-    affiliation: "",
-    url: "http://www.yaelbarcesat.com/",
-    bio: "Autora de los libros Complementación pedagógica y Mantra, vibración infinita.",
-    twitter: ""
-}
-
-var edgardo = {
-    id: 11,
-    order: '02',
-    icon: null,
-    first_name: 'Edgardo',
-    last_name: 'Caramella',
-    photo: "resources/images/edi.jpg",
-    position: "Presidente de la Federación Método DeRose Buenos Aires.<br/>Presidente del Colegiado de los Presidentes de Federaciones del Método DeRose.",
-    name: "Maestro Edgardo Caramella",
-    affiliation: "",
-    url: "http://www.blogdeedgardo.com.ar",
-    bio: "Autor de los libros Bienvenido Yôga, Yôga y energía sexual, La dieta del Yôga y Yôga, guía básica.",
-    twitter: ""
-}
-
-var fernanda = {
-    id: 10,
-    order: '05',
-    icon: null,
-    first_name: 'Fernanda',
-    last_name: 'Neis',
-    photo: "resources/images/fe.jpg",
-    position: "Directora de la Sede Jardins.",
-    name: "Prof. Fernanda Neis",
-    affiliation: "",
-    url: "http://metododerosejardins.wordpress.com/",
-    bio: "",
-    twitter: ""
-}
-
-var charles = {
-    id: 12,
-    order: '04',
-    icon: null,
-    first_name: 'Charles',
-    last_name: 'Maciel',
-    photo: "resources/images/charles.jpg",
-    position: "Presidente de Office.",
-    name: "Prof. Charles Maciel",
-    affiliation: "",
-    url: "http://www.metododerose.org",
-    bio: "",
-    twitter: ""
-}
-
-var nina = {
-    id: 9,
-    order: '05',
-    icon: null,
-    first_name: 'Nina',
-    last_name: 'de Holanda',
-    photo: "resources/images/nina.jpg",
-    position: "Presidente de la Federación Método DeRose São Paulo.",
-    name: "Prof. Nina de Holanda",
-    affiliation: "",
-    url: "http://unidademoema.blogspot.com/",
-    bio: "",
-    twitter: ""
-}
-
-var mariahelena = {
-    id: 8,
-    order: '03',
-    icon: null,
-    first_name: 'Maria Helena',
-    last_name: 'Aguiar',
-    photo: "resources/images/helena.jpg",
-    position: "Presidente de la Federación Método DeRose de Paraná, Brasil.",
-    name: "Prof. Maria Helena Aguiar",
-    affiliation: "",
-    url: "",
-    bio: "",
-    twitter: ""
-}
-
-var vanessa = {
-    id: 7,
-    order: '08',
-    icon: null,
-    first_name: 'Vanessa',
-    last_name: 'de Holanda',
-    photo: "resources/images/vanesa.jpg",
-    position: "Presidente de la Federación Método DeRose Rio de Janeiro.",
-    name: "Prof. Vanessa de Holanda",
-    affiliation: "",
-    url: "http://www.vanessadeholanda.com/",
-    bio: "",
-    twitter: ""
-}
-
-var naiana = {
-    id: 6,
-    order: '07',
-    icon: null,
-    first_name: 'Naiana',
-    last_name: 'Ramos Alberti',
-    photo: "resources/images/nai.jpg",
-    position: "Presidente de la Federación Método DeRose de Rio Grande do Sul, Brasil.",
-    name: "Prof. Naiana Ramos Alberti",
-    affiliation: "",
-    url: "",
-    bio: "",
-    twitter: ""
-}
-
-var melina = {
-    id: 5,
-    order: '11',
-    icon: null,
-    first_name: 'Melina',
-    last_name: 'Flores',
-    photo: "resources/images/meli.jpg",
-    position: "Presidente de la Asociación de Profesionales del Método DeRose de Copacabana, Rio de Janeiro, Brasil.",
-    name: "Prof. Melina Flores",
-    affiliation: "",
-    url: "",
-    bio: "",
-    twitter: ""
-}
-
-var rogerio = {
-    id: 4,
-    order: '09',
-    icon: null,
-    first_name: 'Rogério',
-    last_name: 'Brant',
-    photo: "resources/images/rogerio.jpg",
-    position: "Director de la Sede Alto da XV.",
-    name: "Prof. Rogério Brant",
-    affiliation: "",
-    url: "http://www.rogeriobrant.com.br/",
-    bio: "",
-    twitter: ""
-}
-
-var joris = {
-    id: 3,
-    order: '06',
-    icon: null,
-    first_name: "Joris",
-    photo: "resources/images/joris.jpg",
-    position: "Presidente de la Federación del Método DeRose de Santa Catarina, Brasil",
-    name: "Prof. Joris Marengo",
-    affiliation: "",
-    url: "http://www.novoexecutivo.com.br/",
-    bio: "<p>Autor del libro Yôga Antigo para iniciantes.</p>",
-    twitter: "",
-    last_name: "Marengo"
-};
 
 var derose = {
-    id: 2,
+    id: 1,
     order: '01',
     icon: null,
     first_name: "",
     last_name: "DeRose",
     photo: "resources/images/derose.jpg",
-    position: "Sistematizador del Método DeRose.<br/>Presidente de la Confederación Método DeRose.",
-    name: "Maestro DeRose",
+    position: "",
+    name: "Precetor DeRose",
     affiliation: "",
     url: "http://www.metododerose.org/blogdoderose",
-    bio: "Autor de los libros: Tratado de Yôga, Quando é preciso ser forte, Tudo o que você nunca quis saber sobre Yôga, Programa do Curso Básico, Método de Boas Maneiras, Eu me lembro…, Encontro com o Mestre, Sútras – máximas de lucidez e êxtase, entre otros.",
+    bio: "",
     twitter: "@blogdoderose"
-}
+};
+
+var edgardo = {
+    id: 2,
+    order: '02',
+    icon: null,
+    first_name: 'Edgardo',
+    last_name: 'Caramella',
+    photo: "resources/images/edi.jpg",
+    position: "Presidente da Federação do Método DeROSE da Argentina.",
+    name: "Mestre Edgardo Caramella",
+    affiliation: "",
+    url: "http://www.blogdeedgardo.com.ar",
+    bio: "",
+    twitter: ""
+};
+
+var charles = {
+    id: 3,
+    order: '03',
+    icon: null,
+    first_name: 'Charles',
+    last_name: 'Maciel',
+    photo: "resources/images/charles.jpg",
+    position: "Diretor do Office - São Paulo - BR.",
+    name: "Prof. Charles Maciel",
+    affiliation: "",
+    url: "http://www.metododerose.org",
+    bio: "",
+    twitter: ""
+};
+
+var fernanda = {
+    id: 4,
+    order: '04',
+    icon: null,
+    first_name: 'Fernanda',
+    last_name: 'Neis',
+    photo: "resources/images/fe.jpg",
+    position: "Vice-Presidente do Diretório Central do Método DeROSE",
+    name: "Profᵃ. Fernanda Neis",
+    affiliation: "",
+    url: "http://metododerosejardins.wordpress.com/",
+    bio: "",
+    twitter: ""
+};
+
+var nina = {
+    id: 5,
+    order: '05',
+    icon: null,
+    first_name: 'Nina',
+    last_name: 'de Holanda',
+    photo: "resources/images/nina.jpg",
+    position: "Presidente da Federação do Método DeROSE - São Paulo - BR",
+    name: "Profᵃ Nina de Holanda",
+    affiliation: "",
+    url: "http://unidademoema.blogspot.com/",
+    bio: "",
+    twitter: ""
+};
+
+var joris = {
+    id: 6,
+    order: '06',
+    icon: null,
+    first_name: 'Joris',
+    last_name: 'Marengo',
+    photo: "resources/images/joris.jpg",
+    position: "Presidente da Federação do Método DeROSE de Santa Catarina - BR",
+    name: "Prof. Joris Marengo",
+    affiliation: "",
+    url: "",
+    bio: "",
+    twitter: ""
+};
+
+var antonio = {
+    id: 7,
+    order: '07',
+    icon: null,
+    first_name: 'António',
+    last_name: 'Pereira',
+    photo: "resources/images/antonio.jpg",
+    position: "Conselheiro Emérito do Conselho de Notáveis do Método DeROSE",
+    name: "Prof. António Pereira",
+    affiliation: "",
+    url: "",
+    bio: "",
+    twitter: ""
+};
+
+var luis = {
+    id: 8,
+    order: '08',
+    icon: null,
+    first_name: 'Luís',
+    last_name: 'Lopes',
+    photo: "resources/images/luis.jpg",
+    position: "Presidente da Federação do Método DeROSE de Portugal",
+    name: "Prof. Luís Lopes",
+    affiliation: "",
+    url: "",
+    bio: "",
+    twitter: ""
+};
+
+var rosangela = {
+    id: 9,
+    order: '09',
+    icon: null,
+    first_name: 'Rosângela',
+    last_name: 'de Castro',
+    photo: "resources/images/ro.jpg",
+    position: "Presidente de la Associação dos Profissionais do Método DeROSE de Saquarema - Rio de Janeiro - BR",
+    name: "Profᵃ Rosângela de Castro",
+    affiliation: "",
+    url: "",
+    bio: "",
+    twitter: ""
+};
+
+var gustavo = {
+    id: 10,
+    order: '10',
+    icon: null,
+    first_name: 'Gustavo',
+    last_name: 'Cardoso',
+    photo: "resources/images/gustavo.jpg",
+    position: "Presidente da Federação do Método DeROSE - Inglaterra",
+    name: "Prof. Gustavo Cardoso",
+    affiliation: "",
+    url: "",
+    bio: "",
+    twitter: ""
+};
+
+var bruno = {
+    id: 11,
+    order: '11',
+    icon: null,
+    first_name: 'Bruno',
+    last_name: 'Amaral',
+    photo: "resources/images/bruno.jpg",
+    position: "Presidente da Associação dos Profissionais do Método DeROSE de Telheiras - Lisboa - PT",
+    name: "Prof. Bruno Amaral",
+    affiliation: "",
+    url: "",
+    bio: "",
+    twitter: ""
+};
+
+var edu = {
+    id: 12,
+    order: '12',
+    icon: null,
+    first_name: 'Eduardo',
+    last_name: 'Cirilo',
+    photo: "resources/images/edu.jpg",
+    position: "Presidente da Associação dos Profissionais do Método DeROSE das Antas - Porto - PT",
+    name: "Prof. Eduardo Cirilo",
+    affiliation: "",
+    url: "",
+    bio: "",
+    twitter: ""
+};
 
 Ext.data.JsonP.feedCb({
-        "proposals": [
+    "proposals": [
         {
-            "room": "Sirop Folie",
-            "end_time": "2013-09-20T14:00:00",
-            "description": "Pasaje Vicente López y Montevideo",
-            "title": "Almuerzo y asamblea de Presidentes de Federación",
-            "url": "",
-            "date": viernes,
-            "speakers": [],
-            "proposal_type": "Asamblea",
-            "id": 1,
-            "time": "2013-09-20T12:30:00",
-            "pretty_time": "12:30 hs.",
-            "day": viernes
+            id: 1,
+            room: "Pousada de Viseu",
+            date: viernes,
+            day: viernes,
+            time: "2014-06-13T12:00:00",
+            end_time: "2014-06-13T14:00:00",
+            pretty_time: '12:00 hs.',
+            title: "Check-in",
+            description: "",
+            speakers: []
+        },
+        {
+            id: 2,
+            room: "Claustro",
+            date: viernes,
+            day: viernes,
+            time: "2014-06-13T14:15:00",
+            end_time: "2014-06-13T15:00:00",
+            pretty_time: '14:15 hs.',
+            title: "Concerto de Abertura: Mantra Projekt",
+            description: "",
+            speakers: []
+        },
+        {
+            id: 3,
+            room: sala1,
+            date: viernes,
+            day: viernes,
+            time: "2014-06-13T15:15:00",
+            end_time: "2014-06-13T16:30:00",
+            pretty_time: '15:15 hs.',
+            title: "Flexibilidade passiva e flexibilidade ativa",
+            description: "",
+            speakers: [bruno]
         },
         {
             id: 4,
-            room: olimpic,
+            room: sala2,
             date: viernes,
             day: viernes,
-            time: "2013-09-20T15:00:00",
-            end_time: "2013-09-20T16:20:00",
-            pretty_time: '15:00 hs.',
-            title: "Esculpiendo el Ser Humano. Vivencia con un poco de teoría y mucha práctica",
+            time: "2014-06-13T15:15:00",
+            end_time: "2014-06-13T16:30:00",
+            pretty_time: '15:15 hs.',
+            title: "Prática de ásana em dupla",
             description: "",
-            speakers: [rogerio]
+            speakers: [fernanda]
         },
         {
             id: 5,
-            room: paris,
+            room: sala3,
             date: viernes,
             day: viernes,
-            time: "2013-09-20T15:00:00",
-            end_time: "2013-09-20T16:20:00",
-            pretty_time: '15:00 hs.',
-            title: "Práctica con énfasis en vocalizaciones",
+            time: "2014-06-13T15:15:00",
+            end_time: "2014-06-13T16:30:00",
+            pretty_time: '15:15 hs.',
+            title: "Gestão do tempo",
             description: "",
-            speakers: [melina]
+            speakers: [edu]
         },
+
         {
             id: 6,
-            room: olimpic,
+            room: sala1,
             date: viernes,
             day: viernes,
-            time: "2013-09-20T16:45:00",
-            end_time: "2013-09-20T18:05:00",
+            time: "2014-06-13T16:45:00",
+            end_time: "2014-06-13T18:15:00",
             pretty_time: '16:45 hs.',
-            title: "Práctica con énfasis en conciencia corporal.",
+            title: "Mantra - força & poder",
             description: "",
-            speakers: [naiana]
+            speakers: [rosangela]
         },
         {
             id: 7,
-            room: paris,
+            room: sala2,
             date: viernes,
             day: viernes,
-            time: "2013-09-20T16:45:00",
-            end_time: "2013-09-20T18:05:00",
+            time: "2014-06-13T16:45:00",
+            end_time: "2014-06-13T18:15:00",
             pretty_time: '16:45 hs.',
-            title: "Respiración consciente. Teoría y práctica.",
+            title: "Técnicas de respiração para reenergizar",
             description: "",
-            speakers: [vanessa]
+            speakers: [gustavo]
         },
         {
             id: 8,
-            room: olimpic,
+            room: sala3,
             date: viernes,
             day: viernes,
-            time: "2013-09-20T18:30:00",
-            end_time: "2013-09-20T20:00:00",
-            pretty_time: '18:30 hs.',
-            title: "Apertura conmemorativa de los diez años",
-            description: "",
-            speakers: []
-        },
-        {
-            id: 9,
-            room: 'Teatro del Globo (Marcelo T. de Alvear 1155)',
-            date: viernes,
-            day: viernes,
-            time: "2013-09-20T22:00:00",
-            end_time: "2013-09-20T23:30:00",
-            pretty_time: '22:00 hs.',
-            title: "Presentación de DeRose Art Company.",
-            description: "",
-            speakers: []
-        },
-        {
-            "room": olimpic,
-            "end_time": "2013-09-21T10:00:00",
-            "description": "",
-            "title": "Práctica ortodoxa con énfasis en reeducación comportamental",
-            description: "",
-            "url": "",
-            "date": sabado,
-            "speakers": [joris],
-            "proposal_type": "Práctica",
-            "id": 2,
-            "time": "2013-09-21T10:00:00",
-            "pretty_time": "10:00 hs.",
-            "day": sabado
-        },
-        {
-            id: 10,
-            room: paris,
-            date: sabado,
-            day: sabado,
-            time: "2013-09-21T10:00:00",
-            end_time: "2013-09-21T11:20:00",
-            pretty_time: '10:00 hs.',
-            title: "Nuestras usinas nucleares. Comprensión, desarrollo y entrenamiento de los centros de fuerza.",
-            description: "",
-            speakers: [mariahelena]
-        },
-        {
-            id: 11,
-            room: olimpic,
-            date: sabado,
-            day: sabado,
-            time: "2013-09-21T11:45:00",
-            end_time: "2013-09-21T13:05:00",
-            pretty_time: '11:45 hs.',
-            title: "Sentimiento gregario: unión que fortalece. Vivencia teórica con un poco de práctica.",
+            time: "2014-06-13T16:45:00",
+            end_time: "2014-06-13T18:15:00",
+            pretty_time: '16:45 hs.',
+            title: "Códigos éticos aplicados na vida",
             description: "",
             speakers: [nina]
         },
+
+
+        {
+            id: 9,
+            room: sala1,
+            date: viernes,
+            day: viernes,
+            time: "2014-06-13T18:30:00",
+            end_time: "2014-06-13T20:00:00",
+            pretty_time: '18:30 hs.',
+            title: "Aperfeiçoamento na prática ortodoxa",
+            description: "Para Formadores de formadores do Método DeROSE",
+            speakers: [edgardo]
+        },
+        {
+            id: 10,
+            room: sala2,
+            date: viernes,
+            day: viernes,
+            time: "2014-06-13T18:30:00",
+            end_time: "2014-06-13T20:00:00",
+            pretty_time: '18:30 hs.',
+            title: "O poder das escolhas",
+            description: "",
+            speakers: [joris]
+        },
+
+        
+        {
+            id: 11,
+            room: "",
+            date: viernes,
+            day: viernes,
+            time: "2014-06-13T20:00:00",
+            end_time: "2014-06-13T21:00:00",
+            pretty_time: '20:00 hs.',
+            title: "Intervalo",
+            description: "",
+            speakers: []
+        },
+
+        
         {
             id: 12,
-            room: paris,
-            date: sabado,
-            day: sabado,
-            time: "2013-09-21T11:45:00",
-            end_time: "2013-09-21T13:05:00",
-            pretty_time: '11:45 hs.',
-            title: "Coreografía, conciencia en movimiento. Teoría y práctica.",
+            room: "Claustro",
+            date: viernes,
+            day: viernes,
+            time: "2014-06-13T21:00:00",
+            end_time: "2014-06-13T22:30:00",
+            pretty_time: '21:00 hs.',
+            title: "Jantar",
             description: "",
-            speakers: [melina]
+            speakers: []
         },
+
+        
         {
             id: 13,
-            room: olimpic,
-            date: sabado,
-            day: sabado,
-            time: "2013-09-21T13:30:00",
-            end_time: "2013-09-21T14:50:00",
-            pretty_time: '13:30 hs.',
-            title: "Práctica ortodoxa.",
-            description: "",
-            speakers: [fernanda, charles]
+            room: "Claustro",
+            date: viernes,
+            day: viernes,
+            time: "2014-06-13T22:30:00",
+            end_time: "2014-06-13T24:00:00",
+            pretty_time: '22:30 hs.',
+            title: "Concertos",
+            description: "<ul><li><b>Grutera</b> - <i>O passado volta sempre</i> - Novo disco</li><li><b>Peter Lopes</b> - Acoustic & electronic sounds</li><li>Conversa com rumo II - <i>Liderança Humanizante</i> - Precetor DeRose e o Jornalista António Mateus</li><li><b>Lançamento do livro</b> - Precetor DeRose</li></ul>",
+            speakers: []
         },
+
+
         {
             id: 14,
-            room: olimpic,
+            room: sala1,
             date: sabado,
             day: sabado,
-            time: "2013-09-21T15:15:00",
-            end_time: "2013-09-21T16:35:00",
-            pretty_time: '15:15 hs.',
-            title: "El lenguaje gestual. Práctica",
+            time: "2014-06-14T10:00:00",
+            end_time: "2014-06-14T11:30:00",
+            pretty_time: '10:00 hs.',
+            title: "Desenvolvimento dos centros energéticos",
             description: "",
-            speakers: [naiana]
+            speakers: [rosangela]
         },
         {
             id: 15,
-            room: paris,
+            room: sala2,
             date: sabado,
             day: sabado,
-            time: "2013-09-21T15:15:00",
-            end_time: "2013-09-21T16:35:00",
-            pretty_time: '15:15 hs.',
-            title: "Alimentación en el Método DeRose. Teoría",
+            time: "2014-06-14T10:00:00",
+            end_time: "2014-06-14T11:30:00",
+            pretty_time: '10:00 hs.',
+            title: "Como aumentar a força muscular",
             description: "",
-            speakers: [rogerio]
+            speakers: [gustavo]
         },
+
+
         {
             id: 16,
-            room: 'Salón Versalles',
+            room: sala1,
             date: sabado,
             day: sabado,
-            time: "2013-09-21T15:15:00",
-            end_time: "2013-09-21T16:35:00",
-            pretty_time: '15:15 hs.',
-            title: "Encuentro de supervisados con el Maestro DeRose.",
-            description: "",
-            speakers: [derose,edgardo,charles]
-        },
-        {
-            id: 17,
-            room: olimpic,
-            date: sabado,
-            day: sabado,
-            time: "2013-09-21T17:00:00",
-            end_time: "2013-09-21T18:20:00",
-            pretty_time: '17:00 hs.',
-            title: "Mejorando la concentración. Posiciones de meditación y práctica.",
-            description: "",
-            speakers: [vanessa]
-        },
-        {
-            id: 18,
-            room: paris,
-            date: sabado,
-            day: sabado,
-            time: "2013-09-21T17:00:00",
-            end_time: "2013-09-21T18:20:00",
-            pretty_time: '17:00 hs.',
-            title: "Método de Ingeniería corporal. Práctica",
+            time: "2014-06-14T11:45:00",
+            end_time: "2014-06-14T13:15:00",
+            pretty_time: '11:45 hs.',
+            title: "Liderança com Método",
             description: "",
             speakers: [edgardo]
         },
         {
+            id: 17,
+            room: sala2,
+            date: sabado,
+            day: sabado,
+            time: "2014-06-14T11:45:00",
+            end_time: "2014-06-14T13:15:00",
+            pretty_time: '11:45 hs.',
+            title: "Meridianos & energía",
+            description: "",
+            speakers: [luis]
+        },
+
+        {
+            id: 18,
+            room: sala1,
+            date: sabado,
+            day: sabado,
+            time: "2014-06-14T13:30:00",
+            end_time: "2014-06-14T15:00:00",
+            pretty_time: '13:30 hs.',
+            title: "Mantra com percussão",
+            description: "",
+            speakers: [charles]
+        },
+
+
+        {
             id: 19,
-            room: '',
+            room: sala1,
             date: sabado,
             day: sabado,
-            time: "2013-09-21T19:00:00",
-            end_time: "2013-09-21T20:00:00",
-            pretty_time: '19:00 hs.',
-            title: "Lanzamiento de un nuevo libro del Maestro DeRose.",
-            description: "",
-            speakers: [derose]
-        },
-        {
-            id: 20,
-            room: 'Sede Cerviño (Rep. Árabe Siria 3088)',
-            date: sabado,
-            day: sabado,
-            time: "2013-09-21T22:00:00",
-            end_time: "2013-09-21T06:00:00",
-            pretty_time: '22:00 hs.',
-            title: "Fiesta de los 10 años.",
-            description: "",
-            speakers: []
-        },
-        {
-            id: 21,
-            room: olimpic,
-            date: domingo,
-            day: domingo,
-            time: "2013-09-22T10:00:00",
-            end_time: "2013-09-22T11:20:00",
-            pretty_time: '10:00 hs.',
-            title: "Buena forma con Método. Práctica",
-            description: "",
-            speakers: [rogerio]
-        },
-        {
-            id: 22,
-            room: paris,
-            date: domingo,
-            day: domingo,
-            time: "2013-09-22T10:00:00",
-            end_time: "2013-09-22T11:20:00",
-            pretty_time: '10:00 hs.',
-            title: "Cuerpo en poesía, coreografía. Teoría y práctica",
+            time: "2014-06-14T15:15:00",
+            end_time: "2014-06-14T16:45:00",
+            pretty_time: '15:15 hs.',
+            title: "Shaktí e shakta",
             description: "",
             speakers: [nina]
         },
         {
-            id: 23,
-            room: paris,
-            date: domingo,
-            day: domingo,
-            time: "2013-09-22T11:45:00",
-            end_time: "2013-09-22T13:05:00",
-            pretty_time: '11:45 hs.',
-            title: "Armado de una coreografía para la flashmob.",
-            description: "",
-            speakers: [yael]
-        },
-        {
-            id: 24,
-            room: olimpic,
-            date: domingo,
-            day: domingo,
-            time: "2013-09-22T11:45:00",
-            end_time: "2013-09-22T13:05:00",
-            pretty_time: '11:45 hs.',
-            title: "Práctica heterodoxa con énfasis en cambio de karma, sólo para instructores.",
+            id: 20,
+            room: sala2,
+            date: sabado,
+            day: sabado,
+            time: "2014-06-14T15:15:00",
+            end_time: "2014-06-14T16:45:00",
+            pretty_time: '15:15 hs.',
+            title: "Liberdade! Liberdade!",
             description: "",
             speakers: [joris]
         },
         {
-            id: 25,
-            room: '',
-            date: domingo,
-            day: domingo,
-            time: "2013-09-22T13:30:00",
-            end_time: "2013-09-22T14:30:00",
-            pretty_time: '13:30 hs.',
-            title: "Práctica al aire libre y flashmob, con el apoyo del Gobierno de la Ciudad de Buenos Aires.",
+            id: 21,
+            room: sala3,
+            date: sabado,
+            day: sabado,
+            time: "2014-06-14T15:15:00",
+            end_time: "2014-06-14T16:45:00",
+            pretty_time: '15:15 hs.',
+            title: "Descontração consciente",
             description: "",
+            speakers: [antonio]
+        },
+
+
+        {
+            id: 22,
+            room: sala1,
+            date: sabado,
+            day: sabado,
+            time: "2014-06-14T17:00:00",
+            end_time: "2014-06-14T20:00:00",
+            pretty_time: '17:00 hs.',
+            title: "Método DeROSE e as boas relações humanas",
+            description: "",
+            speakers: [derose]
+        },
+
+
+        {
+            id: 23,
+            room: "",
+            date: sabado,
+            day: sabado,
+            time: "2014-06-14T20:00:00",
+            end_time: "2014-06-14T21:00:00",
+            pretty_time: '20:00 hs.',
+            title: "Intervalo",
+            description: "",
+            speakers: []
+        },
+
+
+        {
+            id: 24,
+            room: "Claustro",
+            date: sabado,
+            day: sabado,
+            time: "2014-06-14T21:00:00",
+            end_time: "2014-06-14T22:30:00",
+            pretty_time: '21:00 hs.',
+            title: "Jantar",
+            description: "",
+            speakers: []
+        },
+
+
+        {
+            id: 25,
+            room: "Claustro",
+            date: sabado,
+            day: sabado,
+            time: "2014-06-14T22:30:00",
+            end_time: "2014-06-14T24:00:00",
+            pretty_time: '22:30 hs.',
+            title: "Coreografias",
+            description: "<ul><li>Solos de coreografias</li><li>Talk Box - Banda Cover</li></ul>",
             speakers: []
         },
         {
             id: 26,
-            room: olimpic,
-            date: domingo,
-            day: domingo,
-            time: "2013-09-22T15:15:00",
-            end_time: "2013-09-22T16:35:00",
-            pretty_time: '15:15 hs.',
-            title: "Sonidos de poder",
+            room: sala1,
+            date: sabado,
+            day: sabado,
+            time: "2014-06-14T22:30:00",
+            end_time: "2014-06-14T24:00:00",
+            pretty_time: '22:30 hs.',
+            title: "DeROSE Party - Dj D'Jesuz",
             description: "",
-            speakers: [charles]
+            speakers: []
         },
+
+
+
         {
             id: 27,
-            room: olimpic,
+            room: sala1,
             date: domingo,
             day: domingo,
-            time: "2013-09-22T17:00:00",
-            end_time: "2013-09-22T19:40:00",
-            pretty_time: '17:00 hs.',
-            title: "Curso: Ásanas para Coreografía.",
+            time: "2014-06-15T09:00:00",
+            end_time: "2014-06-15T10:30:00",
+            pretty_time: '09:00 hs.',
+            title: "Coreografia, o corpo em movimento",
             description: "",
-            speakers: [derose]
-        },
+            speakers: [bruno]
+        },        
+
+
         {
             id: 28,
-            room: olimpic,
+            room: sala1,
             date: domingo,
             day: domingo,
-            time: "2013-09-22T20:00:00",
-            end_time: "2013-09-22T22:00:00",
-            pretty_time: '20:00 hs.',
-            title: "Sat chakra, coreografías, graduación y After Fest",
+            time: "2014-06-15T10:45:00",
+            end_time: "2014-06-15T12:15:00",
+            pretty_time: '10:45 hs.',
+            title: "Como mudar hábitos",
             description: "",
-            speakers: [derose]
+            speakers: [luis]
         },
         {
             id: 29,
-            room: paris,
-            date: sabado,
-            day: sabado,
-            time: "2013-09-21T13:30:00",
-            end_time: "2013-09-21T14:50:00",
-            pretty_time: '13:30 hs.',
-            title: "El entrenamiento en Nuestra Cultura. Teoría y práctica.",
+            room: sala2,
+            date: domingo,
+            day: domingo,
+            time: "2014-06-15T10:45:00",
+            end_time: "2014-06-15T12:15:00",
+            pretty_time: '10:45 hs.',
+            title: "Limpeza e purificação: a renovação interna",
             description: "",
-            speakers: [yael]
+            speakers: [antonio]
+        },        
+        {
+            id: 30,
+            room: sala3,
+            date: domingo,
+            day: domingo,
+            time: "2014-06-15T10:45:00",
+            end_time: "2014-06-15T12:15:00",
+            pretty_time: '10:45 hs.',
+            title: "Administração do stress",
+            description: "",
+            speakers: [edu]
+        },        
+
+
+        {
+            id: 31,
+            room: sala1,
+            date: domingo,
+            day: domingo,
+            time: "2014-06-15T12:30:00",
+            end_time: "2014-06-15T14:00:00",
+            pretty_time: '12:30 hs.',
+            title: "Respiração, ação e emoção",
+            description: "",
+            speakers: [nina]
+        },
+        {
+            id: 32,
+            room: sala2,
+            date: domingo,
+            day: domingo,
+            time: "2014-06-15T12:30:00",
+            end_time: "2014-06-15T14:00:00",
+            pretty_time: '12:30 hs.',
+            title: "Como obter sucesso na profissão",
+            description: "",
+            speakers: [fernanda]
+        },  
+
+
+        {
+            id: 33,
+            room: sala1,
+            date: domingo,
+            day: domingo,
+            time: "2014-06-15T14:15:00",
+            end_time: "2014-06-15T15:45:00",
+            pretty_time: '14:15 hs.',
+            title: "Sistema de boa alimentação",
+            description: "",
+            speakers: [rosangela]
+        },
+        {
+            id: 34,
+            room: "Salão Nobre",
+            date: domingo,
+            day: domingo,
+            time: "2014-06-15T14:15:00",
+            end_time: "2014-06-15T15:45:00",
+            pretty_time: '14:15 hs.',
+            title: "Conversa com o Precetor DeRose e supervisionados",
+            description: "Para Formadores de formadores do Método DeROSE",
+            speakers: [derose]
+        },
+
+
+        {
+            id: 35,
+            room: sala1,
+            date: domingo,
+            day: domingo,
+            time: "2014-06-15T16:00:00",
+            end_time: "2014-06-15T17:15:00",
+            pretty_time: '16:00 hs.',
+            title: "Concentração e meditação, ferramentas para a ação",
+            description: "",
+            speakers: [edgardo]
+        },
+        {
+            id: 36,
+            room: sala2,
+            date: domingo,
+            day: domingo,
+            time: "2014-06-15T16:00:00",
+            end_time: "2014-06-15T17:15:00",
+            pretty_time: '16:00 hs.',
+            title: "A nova humanidade",
+            description: "",
+            speakers: [joris]
+        },
+        {
+            id: 37,
+            room: sala3,
+            date: domingo,
+            day: domingo,
+            time: "2014-06-15T16:00:00",
+            end_time: "2014-06-15T17:15:00",
+            pretty_time: '16:00 hs.',
+            title: "Pújá - a prática da gratidão",
+            description: "",
+            speakers: [charles]
+        },
+
+
+        {
+            id: 38,
+            room: sala1,
+            date: domingo,
+            day: domingo,
+            time: "2014-06-15T17:30:00",
+            end_time: "2014-06-15T18:00:00",
+            pretty_time: '17:30 hs.',
+            title: "Sat chakra de encerramento",
+            description: "",
+            speakers: [derose]
         }
     ]
 });

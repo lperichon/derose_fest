@@ -13,7 +13,9 @@ Ext.define('DeRoseFest.view.speaker.Info', {
 				'<h4>{position}</h4>',
 			'</div>',
 			'<p>{bio}</p>',
-			'<p><a href="{url}">Conocé más</a></p>'
+			'{% if (values.url) { %}',
+			'<p><a href="{url}">Mais</a></p>',
+			'{% } %}'
 		]
 	}
 });
