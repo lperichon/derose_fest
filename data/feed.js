@@ -2,9 +2,9 @@ var sala1 = "Sala 1";
 var sala2 = "Sala 2";
 var sala3 = "Sala 3";
 
-var viernes = "Sexta-feira, 06/13/2014";
-var sabado  = "Sábado, 06/14/2014";
-var domingo = "Domingo, 06/15/2014";
+var viernes = "sexta-feira, 06/13/2014";
+var sabado  = "sábado, 06/14/2014";
+var domingo = "domingo, 06/15/2014";
 
 
 var derose = {
@@ -18,7 +18,7 @@ var derose = {
     name: "Precetor DeRose",
     affiliation: "",
     url: "http://www.metododerose.org/blogdoderose",
-    bio: "",
+    bio: "Este ano será a XX edição do DeROSE Festival Portugal.<br/>Temos o privilégio de anunciar a ilustre presença do Precetor DeRose como convidado de honra.<br/>O Precetor DeRose é o sistematizador da proposta cultural e filosófica do Método DeRose. O seu magistério conta já com mais de 60 anos de aprimoramento e mais de 20 livros publicados. A sua personalidade é reconhecida em todo o mundo por altas instituições governamentais e académicas.",
     twitter: "@blogdoderose"
 };
 
@@ -33,7 +33,7 @@ var edgardo = {
     name: "Mestre Edgardo Caramella",
     affiliation: "",
     url: "http://www.blogdeedgardo.com.ar",
-    bio: "",
+    bio: "A XX edição do DeROSE festival Portugal vai contar com a presença do caríssimo Mestre Edgardo Caramella, Presidente da Federação do Método DeROSE Argentina.<br/>Edgardo Carmella travou contacto com o Precetor DeRose e com a sua proposta cultural em 1985. Desde então aprofundou e desenvolveu um trabalho incansável formando empreendedores que deu origem a oito escolas em Buenos Aires. Em 2007 completa a sua tese e é-lhe outorgado o título de Mestre. Na atualidade é a personalidade mais reconhecida no desenvolvimento de projetos do Método DeROSE na Argentina, sendo o coordenador do programa Método DeROSE para empresas.",
     twitter: ""
 };
 
@@ -48,7 +48,7 @@ var charles = {
     name: "Prof. Charles Maciel",
     affiliation: "",
     url: "http://www.metododerose.org",
-    bio: "",
+    bio: "Dono de um carisma especial e grande comunicador, contaremos com a presença do Prof. Charles Maciel, Diretor do Office – São Paulo, na XX edição do DeROSE Festival Portugal 2014! As suas vivências especiais prometem deixar marcas e lembranças de momentos únicos de celebração, como já nos tem habituado nos anos anteriores.<br/>Auditor de Certificação para o uso da marca Método DeROSE, ministra diversos cursos e workshops, participando dos principais eventos administrativos, estratégicos e festivais de convivência relacionados ao Método DeROSE.",
     twitter: ""
 };
 
@@ -63,7 +63,7 @@ var fernanda = {
     name: "Profᵃ. Fernanda Neis",
     affiliation: "",
     url: "http://metododerosejardins.wordpress.com/",
-    bio: "",
+    bio: "Seremos honrados com a presença da Prof.ª Fernanda Neis na XX edição do DeROSE Festival Portugal!<br/>A Prof.ª Fernanda Neis é Vice-Presidente do Diretório Central do Método DeROSE – São Paulo e ministra várias palestras representando o Método DeROSE por todo o Brasil, Argentina, Europa e Estados Unidos.<br/>No grau de Docente, com dezenas de monitorados pelo mundo, encabeça o Conselho Administrativo do Método DeROSE, com os demais Conselheiros definindo as diretrizes da Instituição. É também Diretora da Sede Central (Unidade Jardins – São Paulo).",
     twitter: ""
 };
 
@@ -78,7 +78,7 @@ var nina = {
     name: "Profᵃ Nina de Holanda",
     affiliation: "",
     url: "http://unidademoema.blogspot.com/",
-    bio: "",
+    bio: "Somos honrados com a presença da Prof.ª Nina de Holanda, Presidente da Federação do Método DeRose São Paulo, desde 2004 e este ano, na XX edição do DeRose festival, contaremos com vivências inesquecíveis que vão ficar na memória dos participantes!<br/>A Prof.ª Nina de Holanda ministra palestras nas áreas de técnicas corporais, técnicas respiratórias, alimentação biológica, administração do stress, desintoxicação orgânica e outros realizados em todo o mundo. É organizadora de vários grupos coreográficos que realizaram várias apresentações em eventos por todo o Brasil e é introdutora e coordenadora do Método DeRose em empresas.",
     twitter: ""
 };
 
@@ -93,7 +93,7 @@ var joris = {
     name: "Prof. Joris Marengo",
     affiliation: "",
     url: "",
-    bio: "",
+    bio: "É um enorme prazer voltarmos a receber a presença de um dos mais antigos Professores do Método DeROSE, na XX edição do DeROSE Festival, o querido Professor Joris Marengo, Presidente da Federação do Método DeROSE de Santa Catarina.<br/>Natural de Floripa é empreendedor do Método DeROSE desde 1977, sendo um apaixonado por esta metodologia de reeducação comportamental. A sua alegria, entusiasmo e conhecimento são contagiantes e nos últimos trinta anos tem dado palestras e consultoria.<br/>Escreveu vários livros. Trabalha com formação profissional no Método DeROSE há vinte cinco anos. Filósofo nas horas vagas, tem amigos pelo mundo inteiro que preza muito. Gosta de cozinhar, escrever, ouvir e estudar jazz, e ilustrar os livros dos seus amigos.",
     twitter: ""
 };
 
@@ -108,7 +108,7 @@ var antonio = {
     name: "Prof. António Pereira",
     affiliation: "",
     url: "",
-    bio: "",
+    bio: "A XX edição do DeROSE Festival contará com a presença do Prof. António Pereira, Conselheiro Emérito do Conselho de Notáveis do Método DeROSE, Lisboa.<br/>Iniciou a sua prática do Método DeROSE em 1977, ao conhecer o 1.º livro do Precetor DeRose.<br/>Começou a sua carreira profissional nesta área, em 1981.<br/>É consultor e Formador em Life Style Coach do Método DeROSE.<br/>Fundador e Presidente do Espaço Lifestyle, em Lisboa. Encontra-se a realizar o Mestrado em Treino Desportivo de Alto Rendimento, na Universidade Lusófona.<br/>Autor do livro de poesia «Momentos Marcantes» e dos CDs «Yôganidrá-Técnicas de Descontração do SwáSthya Yôga» e «Música para Descontrair». Consultor e formador de empresas, filósofo, poeta e escritor, transmite os seus conhecimentos e ideias, no seu blogue, livros, CDs, Cursos e aulas.",
     twitter: ""
 };
 
@@ -123,7 +123,7 @@ var luis = {
     name: "Prof. Luís Lopes",
     affiliation: "",
     url: "",
-    bio: "",
+    bio: "Mais do que a honra da sua presença no XX DeROSE Festival, Prof. Luis Lopes, Presidente da Federação do Método DeRose Portugal - Porto, é o criador e o principal impulsionador deste evento.<br/>Foi fundador da primeira escola certificada do Método DeROSE em Portugal e enquanto Professor do Método, especializou-se na área de Reprogramação Emocional e Técnicas de Purificação Orgânica. É docente de cursos de formação de profissionais do Método DeROSE, desde 1990. Organiza a DeROSE Culture desde 1995 e a Gala DeROSE desde 2005. Criou o programa Maximizar, direcionado para profissionais das mais variadas áreas e empresas.<br/>Mais recentemente fundou e preside a Ordem do Mérito das Índias Orientais.",
     twitter: ""
 };
 
@@ -138,22 +138,7 @@ var rosangela = {
     name: "Profᵃ Rosângela de Castro",
     affiliation: "",
     url: "",
-    bio: "",
-    twitter: ""
-};
-
-var gustavo = {
-    id: 10,
-    order: '10',
-    icon: null,
-    first_name: 'Gustavo',
-    last_name: 'Cardoso',
-    photo: "resources/images/gustavo.jpg",
-    position: "Presidente da Federação do Método DeROSE - Inglaterra",
-    name: "Prof. Gustavo Cardoso",
-    affiliation: "",
-    url: "",
-    bio: "",
+    bio: "É sempre um privilégio enorme contar com as vivências da professora Rôsangela de Castro, Presidente da Associação de Profissionais Método DeROSE Saquarema - Rio de Janeiro, no DeROSE Festival.<br/>Rô de Castro como carinhosamente é reconhecida é uma das mais antigas empreendedoras do Método DeROSE, dotada de um enorme carisma, suas vivências são incríveis e extremamente enriquecedoras. Com mais de trinta e cinco anos de experiência, é autora de livros na área de alimentação e repiração.<br/>Pioneira na organização de festivais, o primeiro festival ocorreu em Saquarema - Rio de Janeiro, Brasil, que fica dentro de uma pousada. Desde esse tempo o DeROSE Festival acontece em diversas partes do mundo: Florianópolis, São Paulo e Saquarema (somente para empreendedores), em Buenos Aires e Portugal. Além destas regiões, seus eventos inspiraram Paris, Hawaii, New York que abrigam o eventos DeROSE Culture.",
     twitter: ""
 };
 
@@ -168,7 +153,7 @@ var bruno = {
     name: "Prof. Bruno Amaral",
     affiliation: "",
     url: "",
-    bio: "",
+    bio: "A XX edição do DeROSE Festival contará com a presença do Prof. Bruno Amaral, Presidente da Associação de Profissionais do Método DeROSE Espaço Telheiras - Lisboa.<br/>Bruno Amaral iniciou a sua prática do Método DeROSE em 1996 e tornou-se empreendedor em 1998. É demonstrador a nível internacional e foi fundador da Escola da Amadora do Método DeROSE.<br/>O seu sucesso e a sua experiência tornarão as nossas vivências do DeROSE Festival uma experiência inesquecível!",
     twitter: ""
 };
 
@@ -183,7 +168,7 @@ var edu = {
     name: "Prof. Eduardo Cirilo",
     affiliation: "",
     url: "",
-    bio: "",
+    bio: "Este ano, contaremos com a presença do Prof. Eduardo Cirilo, Presidente da Associação de Profissionais do Método DeROSE Antas - Porto na XX Edição do DeROSE Festival!<br/>Empreendedor do Método DeROSE a partir de 1999. Desde 2004 dirige a sua escola no Porto, Antas, onde se dedica à formação e aprimoramento de novos instrutores e ao esclarecimento a profissionais, empresários, estudantes e artistas através de aulas de iniciantes, de workshops (técnicas respiratórias, administração do stress, entre outros) e cursos de introdução ao Método DeROSE.<br/>É organizador do evento DeROSE Pro realizado em Portugal, onde reúne todos os profissionais da área, com vista ao aprimoramento da carreira.",
     twitter: ""
 };
 
@@ -210,7 +195,7 @@ Ext.data.JsonP.feedCb({
             end_time: "2014-06-13T15:00:00",
             pretty_time: '14:15 hs.',
             title: "Concerto de Abertura: Mantra Projekt",
-            description: "",
+            description: "Ashta - Novo disco",
             speakers: []
         },
         {
@@ -270,9 +255,9 @@ Ext.data.JsonP.feedCb({
             time: "2014-06-13T16:45:00",
             end_time: "2014-06-13T18:15:00",
             pretty_time: '16:45 hs.',
-            title: "Técnicas de respiração para reenergizar",
+            title: "Mitologia Hindu",
             description: "",
-            speakers: [gustavo]
+            speakers: [charles]
         },
         {
             id: 8,
@@ -350,7 +335,7 @@ Ext.data.JsonP.feedCb({
             time: "2014-06-13T22:30:00",
             end_time: "2014-06-13T24:00:00",
             pretty_time: '22:30 hs.',
-            title: "Concertos",
+            title: "Coreografia, concertos e conversa ",
             description: "<ul><li><b>Grutera</b> - <i>O passado volta sempre</i> - Novo disco</li><li><b>Peter Lopes</b> - Acoustic & electronic sounds</li><li>Conversa com rumo II - <i>Liderança Humanizante</i> - Precetor DeRose e o Jornalista António Mateus</li><li><b>Lançamento do livro</b> - Precetor DeRose</li></ul>",
             speakers: []
         },
@@ -376,9 +361,9 @@ Ext.data.JsonP.feedCb({
             time: "2014-06-14T10:00:00",
             end_time: "2014-06-14T11:30:00",
             pretty_time: '10:00 hs.',
-            title: "Como aumentar a força muscular",
+            title: "Ashtánga sádhana: a prática em oito partes",
             description: "",
-            speakers: [gustavo]
+            speakers: [fernanda]
         },
 
 
@@ -467,7 +452,7 @@ Ext.data.JsonP.feedCb({
             time: "2014-06-14T17:00:00",
             end_time: "2014-06-14T20:00:00",
             pretty_time: '17:00 hs.',
-            title: "Método DeROSE e as boas relações humanas",
+            title: "O Método DeROSE e as boas relações humanas",
             description: "",
             speakers: [derose]
         },
@@ -509,8 +494,8 @@ Ext.data.JsonP.feedCb({
             time: "2014-06-14T22:30:00",
             end_time: "2014-06-14T24:00:00",
             pretty_time: '22:30 hs.',
-            title: "Coreografias",
-            description: "<ul><li>Solos de coreografias</li><li>Talk Box - Banda Cover</li></ul>",
+            title: "Concerto",
+            description: "<ul><li>DeRose ArtCompany | Argentina - dueto extraido do espetáculo Nexus</li><li>Elias - Finalmente - novo disco</li><li>Talk Box | Banda Cover: Beatles, Rolling Stones, Elvis Presley, U2, Bryan Adams, Coldplay e outros.</li></ul>",
             speakers: []
         },
         {
@@ -601,7 +586,7 @@ Ext.data.JsonP.feedCb({
             end_time: "2014-06-15T14:00:00",
             pretty_time: '12:30 hs.',
             title: "Como obter sucesso na profissão",
-            description: "",
+            description: "Para Formadores de formadores do Método DeROSE",
             speakers: [fernanda]
         },  
 

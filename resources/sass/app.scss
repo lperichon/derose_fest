@@ -280,3 +280,13 @@ h4 {
 .x-list-normal .x-list-item.x-list-item-tpl, .x-list-normal .x-list-item .x-dock-horizontal {
     border-top: 1px solid #CCC;
 }
+
+.team-member {
+    margin: 10px;
+    overflow: auto;
+    
+    img {
+        float: left;
+        margin-right: 10px;
+    }
+}

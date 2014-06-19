@@ -48,6 +48,16 @@ Ext.application({
             url: 'data/fest.html'
         },
         {
+            title: "Convite do Precetor DeRose",
+            xtype: 'htmlPage',
+            url: 'data/convite.html'
+        },
+        {
+            title: "Equipa Organizadora",
+            xtype: 'htmlPage',
+            url: 'data/team.html'
+        },
+        {
             title: "Ombudsman",
             xtype: 'htmlPage',
             url: 'data/ombudsman.html'
@@ -112,13 +122,13 @@ Ext.application({
 
     launch: function() {
         Ext.Date.dayNames = [
-            'Domingo',
-            'Segunda',
-            'Terça',
-            'Quarta',
-            'Quinta',
-            'Sexta',
-            'Sábado'
+            'domingo',
+            'segunda',
+            'terça',
+            'quarta',
+            'quinta',
+            'sexta-feira',
+            'sábado'
         ];
 
         DeRoseFest.util.Proxy.process('data/feed.js', function() {
