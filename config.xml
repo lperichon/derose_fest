@@ -47,6 +47,9 @@
     <gap:splash src="resources/startup/1024x748.png" gap:platform="ios" width="1024" height="748" />
     <gap:splash src="resources/startup/768x1004.png" gap:platform="ios" width="768" height="1004" />
 
+    <access origin="*"/> <!-- allow all pages, use for development -->
+    <access origin="*.pushwoosh.com"/> <!-- allow pushwoosh service -->
+
     <gap:plugin name="com.pushwoosh.plugins.pushwoosh" />
     <gap:plugin name="de.appplant.cordova.plugin.local-notification" />
     <gap:plugin name="nl.x-services.plugins.socialsharing" />
