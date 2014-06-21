@@ -61,7 +61,7 @@ Ext.define('DeRoseFest.controller.Sessions', {
 					data = this.getSessionInfo().getRecord().data;
                 	window.plugins.socialsharing.shareViaTwitter('Voy a participar de \"' + data.title + '\" en el #DeRoseFestivalBA', 
                 		'XI DeRose Festival Buenos Aires', 
-                		'http://www.derosemartinez.com.ar/derose_fest/resources/images/afiche.jpg', 
+                		null, 
                 		'http://www.derosefestival.com.ar');
             	}
 			},
@@ -70,7 +70,7 @@ Ext.define('DeRoseFest.controller.Sessions', {
 					data = this.getSessionInfo().getRecord().data;
                 	window.plugins.socialsharing.shareViaFacebook('Voy a participar de \"' + data.title + '\" en el #DeRoseFestivalBA', 
                 		null, 
-                		'http://www.derosemartinez.com.ar/derose_fest/resources/images/afiche.jpg', 
+                		null, 
                 		null);
             	}
 			}
