@@ -1,6 +1,8 @@
 var fest_marker = L.marker(new L.LatLng(-34.58798,-58.391127), {icon: L.icon({iconUrl: 'resources/images/fest.png'})});
 var party_marker = L.marker(new L.LatLng(-34.586713,-58.431061), {icon: L.icon({iconUrl: 'resources/images/party.png'})});
 var cinema_marker = L.marker(new L.LatLng(-34.580095,-58.413158), {icon: L.icon({iconUrl: 'resources/images/cinema.png'})});
+var theater_marker = L.marker(new L.LatLng(-34.5917596,-58.4308294), {icon: L.icon({iconUrl: 'resources/images/theater.png'})});
+
 Ext.define('DeRoseFest.view.Location', {
     extend: 'Ext.Panel',
 
@@ -35,6 +37,7 @@ Ext.define('DeRoseFest.view.Location', {
                      fest_marker.addTo(map).bindPopup("<b>DeRose Festival</b><br>Hotel Etoile");
                      party_marker.addTo(map).bindPopup("<b>Fiesta</b><br>Sede Palermo");
                      cinema_marker.addTo(map).bindPopup("<b>Cine al aire libre</b><br>Sede Cerviño");
+                     theater_marker.addTo(map).bindPopup("<b>DeRose ArtCompany</b><br>Sala Siranush");
                     }
                 }
             },
@@ -46,7 +49,8 @@ Ext.define('DeRoseFest.view.Location', {
                     data: [
                         {name: 'DeRose Festival', desc: "Hotel Etoile", lat: -34.58798, lng: -58.391127, marker: fest_marker},
                         {name: 'Fiesta', desc: "Sede Palermo", lat: -34.586713, lng: -58.431061, marker: party_marker},
-                        {name: 'Cine al aire libre', desc: "Sede Cerviño", lat: -34.580095, lng: -58.413158, marker: cinema_marker}
+                        {name: 'Cine al aire libre', desc: "Sede Cerviño", lat: -34.580095, lng: -58.413158, marker: cinema_marker},
+                        {name: 'DeRose ArtCompany', desc: "Sala Siranush", lat: -34.5917596, lng: -58.4308294, marker: theater_marker}
                     ]
                 },
                 itemTpl: '<div>{name} <span style="font-size:0.8em; color: #707070">{desc}</span></div>',

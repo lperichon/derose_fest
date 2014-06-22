@@ -1,6 +1,7 @@
 var olimpic = "Salón Olímpic (piso 12)";
 var paris =   "Salón Paris (piso 1)";
 
+var jueves  = "Jueves, 09/18/2014"
 var viernes = "Viernes, 09/19/2014";
 var sabado  = "Sábado, 09/20/2014";
 var domingo = "Domingo, 09/21/2014";
@@ -507,6 +508,18 @@ Ext.data.JsonP.feedCb({
             pretty_time: '22:00 hs.',
             title: "Cine al aire libre",
             description: "",
+            speakers: []
+        },
+        {
+            id: 29,
+            room: 'Sala Siranush',
+            date: jueves,
+            day: jueves,
+            time: "2014-09-18T22:00:00",
+            end_time: "2014-09-19T00:00:00",
+            pretty_time: '22:00 hs.',
+            title: "DeRose ArtCompany",
+            description: "Armenia 1353, Palermo",
             speakers: []
         }
     ]
