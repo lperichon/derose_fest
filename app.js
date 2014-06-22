@@ -146,7 +146,7 @@ function registerPushwooshIOS() {
                 pushNotification.setApplicationIconBadgeNumber(0);
               });
 
-    pushNotification.registerDevice({alert:true, badge:true, sound:true, pw_appid:"EF513-2E376", appname:"Pushwoosh"},
+    pushNotification.registerDevice({alert:true, badge:true, sound:true, pw_appid:"EF513-2E376", appname:"DeRose Festival BA 2014"},
                                     function(status) {
                                         var deviceToken = status['deviceToken'];
                                         console.warn('registerDevice: ' + deviceToken);
