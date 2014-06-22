@@ -105,7 +105,6 @@ h4 {
     }
 
     .info {
-        width: 75%;
         height: 80px;
         display: inline-block;
         @include filter-gradient(#c5bbba, #928783, vertical); // IE6-9
@@ -200,6 +199,7 @@ h4 {
     }
 
     .info {
+        width: 75%;
         display: inline-block;
         vertical-align: top;
 
