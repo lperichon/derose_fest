@@ -66,15 +66,15 @@ var nina = {
     twitter: ""
 }
 
-var mariahelena = {
+var naiana = {
     id: 8,
-    order: '03',
+    order: '13',
     icon: null,
-    first_name: 'Maria Helena',
-    last_name: 'Aguiar',
-    photo: "resources/images/helena.jpg",
-    position: "Presidente de la Federación del Método DeRose de Paraná, Brasil.",
-    name: "Prof. Maria Helena Aguiar",
+    first_name: 'Naiana',
+    last_name: 'Alberti',
+    photo: "resources/images/nai.jpg",
+    position: "Former President de la Federación del Método DeRose de Porto Alegre, Brasil.",
+    name: "Prof. Naiana Alberti",
     affiliation: "",
     url: "",
     bio: "",
@@ -278,9 +278,9 @@ Ext.data.JsonP.feedCb({
             time: "2014-09-20T10:00:00",
             end_time: "2014-09-20T11:20:00",
             pretty_time: '10:00 hs.',
-            title: "Despertando la lucidez",
+            title: "Preparando la práctica ortodoxa",
             description: "",
-            speakers: [mariahelena]
+            speakers: [naiana]
         },
         {
             id: 10,
@@ -434,9 +434,9 @@ Ext.data.JsonP.feedCb({
             time: "2014-09-21T11:45:00",
             end_time: "2014-09-21T13:05:00",
             pretty_time: '11:45 hs.',
-            title: "La danza de Shiva",
+            title: "Práctica con énfasis en lenguaje gestual",
             description: "",
-            speakers: [mariahelena]
+            speakers: [naiana]
         },
         {
             id: 23,
