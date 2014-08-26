@@ -28,7 +28,7 @@ Ext.require('DeRoseFest.util.Proxy');
 Ext.application({
     // Change the values below to re-configure the app for a different conference.
 
-    title:   '<img src="resources/images/logo.png"/><img src="resources/images/eco.png" style="width: 60px; vertical-align: top; margin-left: 100px;"/>',
+    title:   '<img src="resources/images/logo.png"/><img src="resources/images/eco.png" style="width: 75px; margin-left: 100px;"/>',
     dataUrl: '',
 
     twitterSearch: '#DeRoseFestivalBA',

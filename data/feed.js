@@ -247,8 +247,20 @@ Ext.data.JsonP.feedCb({
             speakers: []
         },
         {
+            id: 30,
+            room: paris,
+            date: viernes,
+            day: viernes,
+            time: "2014-09-19T21:30:00",
+            end_time: "2014-09-20T22:00:00",
+            pretty_time: '21:30 hs.',
+            title: "Show de coreografías",
+            description: "",
+            speakers: []
+        },
+        {
             id: 7,
-            room: '',
+            room: paris,
             date: viernes,
             day: viernes,
             time: "2014-09-19T20:00:00",
